@@ -1,0 +1,60 @@
+/*
+ * Author: DarkCeptor44
+ * Created by me as a external theme for CreativeTim's Light Bootstrap Dashboard.
+ */
+.wrapper {
+  background: #121212; }
+  .wrapper > .navbar, .wrapper > .navbar .navbar-brand {
+    background: #242424;
+    color: #ddd; }
+  .wrapper .progress {
+    background-color: #121212; }
+    .wrapper .progress > .progress-bar.progress-bar-black {
+      background-color: #888888; }
+  .wrapper .card, .wrapper .card .title {
+    background-color: #242424;
+    color: #eee; }
+  .wrapper .footer, .wrapper .footer .copyright {
+    background-color: #242424;
+    border-color: transparent;
+    color: #ddd; }
+  .wrapper .form-group .form-control {
+    border-color: #888888;
+    opacity: 0.8;
+    color: #eee; }
+  .wrapper .form-group .form-control:focus, .wrapper .form-group .form-control:hover {
+    opacity: 1; }
+  .wrapper .form-group label {
+    color: #eee;
+    margin-top: 7px; }
+  .wrapper .main-panel {
+    background: #121212; }
+    .wrapper .main-panel > .navbar, .wrapper .main-panel > .navbar .navbar-brand {
+      background: #242424;
+      color: #ddd; }
+    .wrapper .main-panel .progress > .progress-bar.progress-bar-black {
+      background-color: #888888; }
+    .wrapper .main-panel .card, .wrapper .main-panel .card .title {
+      background-color: #242424;
+      color: #eee; }
+    .wrapper .main-panel .footer, .wrapper .main-panel .footer .copyright {
+      background-color: #242424;
+      border-color: transparent;
+      color: #ddd; }
+    .wrapper .main-panel .form-group .form-control {
+      border-color: #888888;
+      opacity: 0.8;
+      color: #eee; }
+    .wrapper .main-panel .form-group .form-control:focus, .wrapper .main-panel .form-group .form-control:hover {
+      opacity: 1; }
+    .wrapper .main-panel .form-group label {
+      color: #eee;
+      margin-top: 7px; }
+  .wrapper .sidebar[data-color="black"]:after,
+  .wrapper .bootstrap-navbar[data-color="black"]:after {
+    background: #242424;
+    background-size: 150% 150%; }
+  .wrapper .form-control, .wrapper .form-control:focus {
+    background-color: transparent; }
+
+/*# sourceMappingURL=dark-bootstrap-dashboard.css.map */

@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Nyzo.net - Knowledgebase - Getting started - How to set up a verifier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This article describes the best practice for creating your first verifier.">
+    <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="icon" href="amp/favicon.ico">
+        <!-- Required vendor scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171082179-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171082179-1');
+</script>
+
+  </head>
+
+  <body>
+    <div class="loader">
+      <div class="loading-animation"></div>
+    </div>
+
+    <div class="navbar-container ">
+      <nav class="navbar navbar-expand-lg navbar-dark" data-overlay data-sticky="top">
+        <div class="container">
+          <a class="navbar-brand fade-page" href="knowledgebase.html">
+            <img src="assets/img/nyzlogo.png" alt="Nyzo" style='max-height:4.5rem;'>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg" alt="menu interface icon" data-inject-svg />
+            <img class="icon navbar-toggler-close" src="assets/img/icons/interface/cross.svg" alt="cross interface icon" data-inject-svg />
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <div class="py-2 py-lg-0">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a href="ncfp.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">NCFP</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="github.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">Github</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="mobile.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">Mobile</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Explorer</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu"><a target='_blank' href="https://nyzo.co" class="dropdown-item fade-page">Official explorer</a><a target='_blank' href="https://explorer.nyzo.net" class="dropdown-item fade-page">Web explorer<span class="badge badge-primary ml-2">New</span></a><a target='_blank' href="https://explorer.nyzo.net/client/richlist.html"
+                        class="dropdown-item fade-page">Richlist<span class="badge badge-primary ml-2">New</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Community</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu"><a href="https://forum.nyzo.community" class="dropdown-item fade-page">Forum<span class="badge badge-primary ml-2">New</span></a><a href="https://nyzo.ondiscord.net" class="dropdown-item fade-page">Discord</a><a href="https://t.me/NyzoCo"
+                        class="dropdown-item fade-page">Telegram</a><a href="https://twitter.com/nyzo_currency" class="dropdown-item fade-page">Twitter</a><a href="https://www.facebook.com/nyzoblockchain/" class="dropdown-item fade-page">Facebook</a><a href="https://weibo.com/nyzoco"
+                        class="dropdown-item fade-page">Weibo</a><br><a href="https://nyzo.io"
+                        class="dropdown-item fade-page">Nyzo.io</a><a href="https://nyzo.xyz"
+                        class="dropdown-item fade-page">Nyzo.xyz</a><a href="https://nyzo.today"
+                        class="dropdown-item fade-page">Nyzo.today</a><a href="https://nyzo.me"
+                        class="dropdown-item fade-page">Nyzo.me (cn)</a><br><a href="https://weibo.com/nyzoco"
+                        class="dropdown-item fade-page">QQ: 1007477423</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="http://78.47.221.148" target="_blank" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">Docs</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Exchanges</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu"><a href="https://buy.nyzo.net" class="dropdown-item fade-page">Qtrade.io<span class="badge badge-primary ml-2">Hot</span></a><a href="https://bilaxy.com" class="dropdown-item fade-page">Bilaxy</a><a href="https://bihodl.com"
+                        class="dropdown-item fade-page">Bihodl</a><a href="https://hotbit.io"
+                        class="dropdown-item fade-page">Hotbit</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!--<li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">API</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto px-0" data-dropdown-content>
+                      <div class="bg-white rounded border shadow-lg o-hidden">
+                        <div class="list-group list-group-flush">
+                          <a href="https://explorer.nyzo.net/client/json/balance_list.json" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-3">
+                            <img class="icon icon-md" src="assets/img/icons/theme/files/selected-file.svg" alt="selected-file icon" data-inject-svg />
+                            <div class="text-body ml-3">
+                              <span>Balance list</span>
+                              <div class="text-small text-muted">Sorted numerically</div>
+                            </div>
+                          </a>
+                          <a href="https://explorer.nyzo.net/client/json/supply.json" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-3">
+                            <img class="icon icon-md" src="assets/img/icons/theme/files/selected-file.svg" alt="selected-file icon" data-inject-svg />
+                            <div class="text-body ml-3">
+                              <span>Network metrics</span>
+                              <div class="text-small text-muted">Circulating supply & more</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li> -->
+              </ul>
+            </div><a href="knowledgebase-wallets.html" class="btn btn-primary ml-lg-3">Download wallet</a>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <section class="bg-primary-3 text-light has-divider" data-overlay>
+      <img src="https://w.wallhaven.cc/full/4l/wallhaven-4l63wl.png" alt="Image" class="bg-image opacity-50">
+      <div class="container mt-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <h1 class="h2 mb-3">How to set up a verifier</h1>
+            <!-- <form>
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon-1">
+                    <img class="icon" src="assets/img/icons/theme/general/search.svg" alt="search icon" data-inject-svg />
+                  </span>
+                </div>
+                <input type="search" class="form-control" placeholder="Search the Nyzo knowledgebase" aria-label="Search" aria-describedby="basic-addon-1">
+              </div>
+            </form> -->
+            <div class="d-flex text-small">
+              <span class="text-muted">In this article you will learn how to set up a Nyzo verifier.</span>
+              <!-- <ul class="list-unstyled d-flex ml-2 flex-wrap">
+                <li class="mx-1"><a href="#">Verifier installation,</a>
+                </li>
+                <li class="mx-1"><a href="#">Nyzo wallets,</a>
+                </li>
+                <li class="mx-1"><a href="#">How to join the network</a>
+                </li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider">
+        <img src="assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
+      </div>
+    </section>
+
+    <section class="pb-0 pb-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="knowledgebase.html">Knowledgebase</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="knowledgebase-getting-started.html">Getting started</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="#">How to set up a verifier</a>
+                  </li>
+                </ol>
+              </nav>
+
+            </div>
+            <h1>How to set up a verifier</h1>
+            <div class="d-flex align-items-center">
+              <a href="#">
+                <img src="https://forum.nyzo.community/user_avatar/forum.nyzo.community/snipe/120/307_2.png" alt="Avatar" class="avatar mr-2">
+              </a>
+              <div>
+                <div>by <a href="https://forum.nyzo.community/u/Snipe/">0xSnipe</a>
+                </div>
+                <div class="text-small text-muted">31/01/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-0" data-reading-position>
+      <div class="container">
+        <div class="row justify-content-center position-relative">
+          <div class="col-lg-10 col-xl-8">
+            <img src="https://cdn.discordapp.com/attachments/624369209173999617/672797803931631617/My_Post57.png" alt="Image" class="rounded">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <article class="article">
+              <p class="lead">
+                Setting up your first verifier on Ubuntu 18.04
+              </p>
+              <p>
+                In this tutorial a Virtual Private Server (VPS) is used to run Ubuntu, an operating system just like Windows -- which was designed for specific applications such as hosting your own verifier.<br><br>Using such a server is not a requirement if you're proficient in Linux and know how to run verifiers on your local network. This tutorial intends to be as beginner-friendly as possible and the usage of a VPS is a logical outcome of that. The Nyzo verifier has to run continuously 24/7, whether it resides in the queue or in the cycle is irrelevant. <br><br><a href='proof-of-diversity-02.html' target='_blank'>For more information about the life cycle of a verifier click here.</a>
+              </p>
+              <p>
+
+              </p>
+              <h4>Choosing a VPS provider</h4>
+              <p>
+                The first step in our journey is deciding on a VPS provider to use. <br>Several distinctions can be made between companies, the price/quality ratio being the number 1 priority for most.<br><br>
+
+                There are several candidates which offer reliable servers for a couple of dollars per month:
+ <!-- start vps table -->
+        <div class="row mb-4">
+          <!-- <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="NaN">
+            <div class="card card-body align-items-center shadow-3d">
+              <span class="badge badge-top badge-dark">Most Popular</span>
+              <div class="pt-md-2">
+                <h4>Hetzner</h4>
+              </div>
+              <div class="d-flex align-items-start pb-md-2">
+                <span class="h3">$</span>
+                <span class="display-4 mb-0">4</span>
+              </div>
+              <span class="text-small text-muted">Per VPS, per month</span>
+              <ul class="text-center list-unstyled my-2 my-md-4">
+                <li class="py-1">
+                  <span>Scalable VPS limit</span>
+                </li>
+                <li class="py-1">
+                  <span>High performance benchmarks</span>
+                </li>
+                <li class="py-1">
+                  <span>Cost-friendly</span>
+                </li>
+                <li class="py-1">
+                  <span>Hourly billing</span>
+                </li>
+                <li class="py-1">
+                  <span class="text-muted text-strikethrough">DDoS protection</span>
+                </li>
+              </ul>
+               <a href="#" class="btn btn-primary">
+    Visit Hetzner
+  </a>
+            </div>
+          </div> -->
+          <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="NaN">
+            <div class="card card-body align-items-center ">
+              <div class="pt-md-2">
+                <h4>Hetzner</h4>
+              </div>
+              <div class="d-flex align-items-start pb-md-2">
+                <span class="h3">$</span>
+                <span class="display-4 mb-0">4</span>
+              </div>
+              <span class="text-small text-muted">Per VPS, per month</span>
+              <ul class="text-center list-unstyled" style='padding-left:0rem;'>
+                <li class="py-1">
+                  <span>Scalable VPS limit</span>
+                </li>
+                <li class="py-1">
+                  <span>High performance benchmarks</span>
+                </li>
+                <li class="py-1">
+                  <span>Cost-friendly</span>
+                </li>
+                <li class="py-1">
+                  <span>Hourly billing</span>
+                </li>
+                <li class="py-1">
+                  <span class='text-muted text-strikethrough'>DDoS protection</span>
+                </li>
+              </ul>
+              <a href="https://hetzner.com" target='_blank' class="btn btn-outline-primary">
+    Visit Hetzner
+  </a>
+            </div>
+          </div>
+          <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="NaN">
+            <div class="card card-body align-items-center ">
+              <div class="pt-md-2">
+                <h4>OVH</h4>
+              </div>
+              <div class="d-flex align-items-start pb-md-2">
+                <span class="h3">$</span>
+                <span class="display-4 mb-0">4</span>
+              </div>
+              <span class="text-small text-muted">Per VPS, per month</span>
+              <ul class="text-center list-unstyled" style='padding-left:0rem;'>
+                <li class="py-1">
+                  <span>Unlimited VPS limit</span>
+                </li>
+                <li class="py-1">
+                  <span>Good performance benchmarks</span>
+                </li>
+                <li class="py-1">
+                  <span>Cost-friendly</span>
+                </li>
+                <li class="py-1">
+                  <span>Pay in advance</span>
+                </li>
+                <li class="py-1">
+                  <span class=''>DDoS protection</span>
+                </li>
+              </ul>
+              <a href="https://ovh.com" target='_blank' class="btn btn-outline-primary">
+    Visit OVH
+  </a>
+            </div>
+          </div>
+         <!--  <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="NaN">
+            <div class="card card-body align-items-center ">
+              <div class="pt-md-2">
+                <h4>OVH</h4>
+              </div>
+              <div class="d-flex align-items-start pb-md-2">
+                <span class="h3">$</span>
+                <span class="display-4 mb-0">4</span>
+              </div>
+              <span class="text-small text-muted">Per VPS, per month</span>
+              <ul class="text-center list-unstyled" style='padding-left:0rem;'>
+                <li class="py-1">
+                  <span>Unlimited VPS limit</span>
+                </li>
+                <li class="py-1">
+                  <span>Medium performance benchmarks</span>
+                </li>
+                <li class="py-1">
+                  <span>Cost-friendly</span>
+                </li>
+                <li class="py-1">
+                  <span>Pay in advance</span>
+                </li>
+                <li class="py-1">
+                  <span>DDoS protection</span>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-outline-primary">
+    Visit OVH
+  </a>
+            </div>
+          </div> -->
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <span>* Prices last updated January 2020.
+            </span>
+          </div>
+        </div>
+
+
+    <!-- end vps table -->
+
+              </p>
+
+
+
+              <h5>Registration and purchase</h5>
+              <p>After you have chosen your provider, go ahead and register on their website. After your registration has been completed and your account has been activated we can go ahead and purchase our first VPS.<br><br>Depending on the provider, navigating their website to purchase the right VPS will be different.<br>The minimum required system specifications are:</p>
+              <ul>
+                <li>1 CPU</li>
+                <li>2GB RAM</li>
+                <li>20GB diskspace</li>
+                <li>20TB traffic</li>
+              </ul>
+<hr>
+             <p> <b>In the case of Hetzner</b>, CX11 matches what we're looking for. <br>Go ahead and create a New Project in your cloud console.<br><br>Do not mention Nyzo in your project name or you will risk account closure due to their terms & conditions against cryptocurrencies.<br><br>After creating your project, open it and click on 'Add Server'<br></p>
+
+              <div class="row">
+          <div class="col-6 col-md-4">
+            <a href="https://i.imgur.com/y78SML3.png" data-fancybox="Hetzner tutorial 01" data-options="{&quot;loop&quot;:true}">
+              <img src="https://i.imgur.com/y78SML3.png" alt="Image" class="rounded">
+            </a>
+          </div>
+          <div class="col-6 col-md-4">
+            <a href="https://i.imgur.com/YbLPHQY.png" data-fancybox="Hetzner tutorial 02" data-options="{&quot;loop&quot;:true}">
+              <img src="https://i.imgur.com/YbLPHQY.png" alt="Image" class="rounded">
+            </a>
+          </div>
+          <div class="col-6 col-md-4">
+            <a href="https://i.imgur.com/BKm4DNX.png" data-fancybox="Hetzner tutorial 03" data-options="{&quot;loop&quot;:true}">
+              <img src="https://i.imgur.com/BKm4DNX.png" alt="Image" class="rounded">
+            </a>
+          </div>
+        </div>
+<p>
+          <br>Select a location and make sure that the OS is <b>Ubuntu 18.04</b> with as plan: CX11.<br>
+          Leave the other configurations in place as is.<br></p>
+
+          <div class="row">
+          <div class="col-9 col-md-4">
+            <a href="https://i.imgur.com/Q0B7ZBR.png" data-fancybox="Hetzner server creation" data-options="{&quot;loop&quot;:true}">
+              <img src="https://i.imgur.com/Q0B7ZBR.png" alt="Image" class="rounded">
+            </a>
+          </div>
+          <div class="col-9 col-md-4">
+            <a href="https://i.imgur.com/5MaJUWT.png" data-fancybox="Gallery Example" data-options="{&quot;loop&quot;:true}">
+              <img src="https://i.imgur.com/5MaJUWT.png" alt="Image" class="rounded">
+            </a>
+          </div>
+        </div>
+<hr>  <p>
+          <b>In the case of OVH</b>, VPS SSD 1 matches what we're looking for. <br>Go ahead and open the VPS SSD page from the menu and select VPS SSD 1 from the pricing plan.<br>On the next page, select 'Linux Distribution only' and the 'Ubuntu 18.04 Server'.<br><br>Click 'Next' twice and decide the frequency of your payment for this server.</p>
+
+          <div class="row">
+          <div class="col-6 col-md-4">
+            <a href="https://i.imgur.com/7AKSMYa.png" data-fancybox="Hetzner server creation" data-options="{&quot;loop&quot;:true}">
+              <img src="https://i.imgur.com/7AKSMYa.png" alt="Image" class="rounded">
+            </a>
+          </div>
+          <div class="col-6 col-md-4">
+            <a href="https://i.imgur.com/4TGT3in.png" data-fancybox="Gallery Example" data-options="{&quot;loop&quot;:true}">
+              <img src="https://i.imgur.com/4TGT3in.png" alt="Image" class="rounded">
+            </a>
+          </div>
+          <div class="col-6 col-md-4">
+            <a href="https://i.imgur.com/QI1kvf0.png" data-fancybox="Gallery Example" data-options="{&quot;loop&quot;:true}">
+              <img src="https://i.imgur.com/QI1kvf0.png" alt="Image" class="rounded">
+            </a>
+          </div>
+        </div>
+        <hr>
+        <p>After you have received your login credentials (this can take a few minutes): open up command prompt on your computer to authenticate with the remote server we just bought.<br>
+        Type in 'ssh root@ip_address', replace the ip_address placeholder with the IP address of your remote server<br>
+        </p>
+        <br><br>
+
+        <div class="row">
+          <div class="col-6 col-md-4">
+            <a href="https://i.imgur.com/XNBWv22.png" data-fancybox="Hetzner server creation" data-options="{&quot;loop&quot;:true}">
+              <img src="https://i.imgur.com/XNBWv22.png" alt="Image" class="rounded">
+            </a>
+          </div>
+          <div class="col-6 col-md-4">
+            <a href="https://i.imgur.com/qTAWKU6.png" data-fancybox="Gallery Example" data-options="{&quot;loop&quot;:true}">
+              <img src="https://i.imgur.com/qTAWKU6.png" alt="Image" class="rounded">
+            </a>
+          </div>
+        </div>
+
+        <p>We are now logged in to our VPS after entering its password as requested, it is now ready to accept commands. <br><br>You will now copy and paste commands into the command prompt. The command prompt behaves differently compared to classical programs on your machine, use right-click to paste text into the field. Do not use CTRL-V.
+          <br><br>The next command you will need to execute is:<br>
+          <pre class='language-bash'>wget https://explorer.nyzo.net/client/setup/setup.sh</pre><br><br>
+          Followed by<br>
+          <pre class='language-bash'>chmod +x setup.sh</pre><br><br>Next, start the installation of the verifier with<br>
+          <pre class='language-bash'>./setup.sh MyVerifierUsername</pre><br>For easy recognition on the explorer, it is recommended to personalize your verifier name.<b> Do not use spaces in your nickname.</b></p><br>
+
+          <p>After the installation has been completed (no more funny text is dancing in the black box and you can type again) it is time to extract the private seed from the verifier installation and to verify if our verifier is showing up in the queue.<br>
+            <br>To extract the private key from your server, simply use the following command:<br>
+            <pre class='language-bash'>more /var/lib/nyzo/production/verifier_private_seed</pre><br><br>As with every private key, don't share it with anyone else as it gives direct access to your Nyzo verifier and any funds it may hold.<br><br>To find out whether your node is properly running you can use <a href='https://nyzo.co/queue/all' target='_blank'>the queue page here.</a> Use CTRL+F to find your nickname on the page.<br>Once you have found your node in the list and its status is either white or orange: <i>congratulations, you have deployed your first verifier!</i><br><br>If you can not find your node in the list, or the color does not correspond with white or orange, allow for it to settle for half an hour. If you still have problems at this stage, feel free to join any of the social media channels to ask for help.<br><br>Half the battle has been won. <a href='getting-started-02.html' target='_blank'>Next up is for you to <b>secure your verifier(s)</b> by setting up a sentinel.</a></p> While this is not a requirement, it is highly recommended you set up a sentinel -- it is your only line of defense against dropping out of the cycle accidentally.<br><br>
+
+            <h5>Earning Nyzo</h5>
+            <p>You have installed your verifier but are not earning Nyzo just yet.<br>Part of Nyzo's success is in its novel consensus mechanism: Proof of Diversity, which automatically and randomly elects people who are running nodes to become part of the network. Time and diversity keep the network decentralized and secure.<br><br>The amount of nodes in the queue reflect people's willingness to join the network.<br>At the time of writing there are 1800 nodes in the cycle, actively earning Nyzo, with over 17000 nodes eagerly waiting to become part of the network.<br><br><a href='getting-started-04.html' target='_blank'>To understand the entire process of joining the cycle, click here.</a></p>
+
+
+            <!-- <div class="row justify-content-center position-relative">
+              <div class="col-lg-10 col-xl-8">
+                <img src="https://i.imgur.com/y78SML3.png" alt="Image" class="rounded">
+              </div>
+            </div> -->
+
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="has-divider">
+      <div class="container pt-3">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <hr> <!-- write js script to auto populate this with the current url TODO -->
+            <div class="d-flex align-items-center">
+              <span class="text-small mr-1">Share this article:</span>
+              <div class="d-flex mx-2">
+                <a id='shareTwitterToPopulate' href="#" class="btn btn-round btn-primary mx-1">
+                  <img class="icon icon-sm" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+                </a>
+                <a id='shareFacebookToPopulate' href="#" class="btn btn-round btn-primary mx-1">
+                  <img class="icon icon-sm" src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
+                </a>
+
+              </div>
+            </div>
+            <hr>
+
+          </div>
+        </div>
+      </div>
+      <div class="divider">
+        <img class="bg-primary-3" src="assets/img/dividers/divider-3.svg" alt="divider graphic" data-inject-svg />
+      </div>
+    </section>
+
+    <footer class="pb-4 bg-primary-3 text-light" id="footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col">
+            <div class="card card-body border-0 o-hidden mb-0 bg-primary text-light">
+              <div class="position-relative d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="h3 text-center mb-md-0">Start building & get rewarded</div>
+                <a href="ncfp.html" class="btn btn-lg btn-white">
+      Discover NCFP's
+    </a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-2">
+          <div class="col-auto">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="https://www.instagram.com/nyzo_currency" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/instagram.svg" alt="instagram social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://twitter.com/nyzo_currency" target='_blank' class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/youtube.svg" alt="youtube social icon" data-inject-svg />
+                </a>
+              </li> -->
+              <li class="nav-item">
+                <a href="https://medium.co/@nyzoco" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/medium.svg" alt="medium social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.facebook.com/nyzoblockchain/" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="github.html" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/theme/social/github.svg" alt="github social icon" data-inject-svg />
+                </a>
+              </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-md-auto text-center">
+            <small class="text-muted">&copy;2020 This page is protected by reCAPTCHA and is subject to the Google <a href="https://www.google.com/policies/privacy/">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service.</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+      <img class="icon" src="assets/img/icons/theme/navigation/arrow-up.svg" alt="arrow-up icon" data-inject-svg />
+    </a>
+
+    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <!-- Clipboard (copies content from browser into OS clipboard) -->
+    <script type="text/javascript" src="assets/js/clipboard.js"></script>
+    <!-- Fancybox (handles image and video lightbox and galleries) -->
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <!-- Flatpickr (calendar/date/time picker UI) -->
+    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+    <!-- Flickity (handles touch enabled carousels and sliders) -->
+    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+    <!-- Isotope (masonry layouts and filtering) -->
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- jarallax (parallax effect and video backgrounds) -->
+    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- jQuery smartWizard facilitates steppable wizard content -->
+    <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+    <!-- Prism (displays formatted code boxes) -->
+    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+    <!-- Smooth scroll (animation to links in-page)-->
+    <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+    <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
+    <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+    <!-- Typed text (animated typing effect)-->
+    <script type="text/javascript" src="assets/js/typed.min.js"></script>
+    <!-- Required theme scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/theme.js"></script>
+    <!-- Removes page load animation when window is finished loading -->
+    <script type="text/javascript">
+      window.addEventListener("load", function () {    document.querySelector('body').classList.add('loaded');  });
+    </script>
+
+    <script type="text/javascript">
+      function initShareLinks(){
+        curr_pos = window.location.href;
+        document.getElementById('shareTwitterToPopulate').href= 'https://twitter.com/share?url=' + encodeURI(curr_pos);
+        document.getElementById('shareFacebookToPopulate').href= 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURI(curr_pos);
+      }
+      initShareLinks();
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Nyzo.net - Knowledgebase - Proof of Diversity - The role of the sentinel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explains the importance of & how and when the sentinel interacts with the network">
+    <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="icon" href="amp/favicon.ico">
+        <!-- Required vendor scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171082179-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171082179-1');
+</script>
+
+  </head>
+
+  <body>
+    <div class="loader">
+      <div class="loading-animation"></div>
+    </div>
+
+    <div class="navbar-container ">
+      <nav class="navbar navbar-expand-lg navbar-dark" data-overlay data-sticky="top">
+        <div class="container">
+          <a class="navbar-brand fade-page" href="knowledgebase.html">
+            <img src="assets/img/nyzlogo.png" alt="Nyzo" style='max-height:4.5rem;'>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg" alt="menu interface icon" data-inject-svg />
+            <img class="icon navbar-toggler-close" src="assets/img/icons/interface/cross.svg" alt="cross interface icon" data-inject-svg />
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <div class="py-2 py-lg-0">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a href="ncfp.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">NCFP</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="github.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">Github</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="mobile.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">Mobile</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Explorer</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu"><a target='_blank' href="https://nyzo.co" class="dropdown-item fade-page">Official explorer</a><a target='_blank' href="https://explorer.nyzo.net" class="dropdown-item fade-page">Web explorer<span class="badge badge-primary ml-2">New</span></a><a target='_blank' href="https://explorer.nyzo.net/client/richlist.html"
+                        class="dropdown-item fade-page">Richlist<span class="badge badge-primary ml-2">New</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Community</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu"><a href="https://forum.nyzo.community" class="dropdown-item fade-page">Forum<span class="badge badge-primary ml-2">New</span></a><a href="https://nyzo.ondiscord.net" class="dropdown-item fade-page">Discord</a><a href="https://t.me/NyzoCo"
+                        class="dropdown-item fade-page">Telegram</a><a href="https://twitter.com/nyzo_currency" class="dropdown-item fade-page">Twitter</a><a href="https://www.facebook.com/nyzoblockchain/" class="dropdown-item fade-page">Facebook</a><a href="https://weibo.com/nyzoco"
+                        class="dropdown-item fade-page">Weibo</a><br><a href="https://nyzo.io"
+                        class="dropdown-item fade-page">Nyzo.io</a><a href="https://nyzo.xyz"
+                        class="dropdown-item fade-page">Nyzo.xyz</a><a href="https://nyzo.today"
+                        class="dropdown-item fade-page">Nyzo.today</a><a href="https://nyzo.me"
+                        class="dropdown-item fade-page">Nyzo.me (cn)</a><br><a href="https://weibo.com/nyzoco"
+                        class="dropdown-item fade-page">QQ: 1007477423</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="http://78.47.221.148" target="_blank" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">Docs</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Exchanges</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu"><a href="https://buy.nyzo.net" class="dropdown-item fade-page">Qtrade.io<span class="badge badge-primary ml-2">Hot</span></a><a href="https://bilaxy.com" class="dropdown-item fade-page">Bilaxy</a><a href="https://bihodl.com"
+                        class="dropdown-item fade-page">Bihodl</a><a href="https://hotbit.io"
+                        class="dropdown-item fade-page">Hotbit</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!--<li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">API</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto px-0" data-dropdown-content>
+                      <div class="bg-white rounded border shadow-lg o-hidden">
+                        <div class="list-group list-group-flush">
+                          <a href="https://explorer.nyzo.net/client/json/balance_list.json" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-3">
+                            <img class="icon icon-md" src="assets/img/icons/theme/files/selected-file.svg" alt="selected-file icon" data-inject-svg />
+                            <div class="text-body ml-3">
+                              <span>Balance list</span>
+                              <div class="text-small text-muted">Sorted numerically</div>
+                            </div>
+                          </a>
+                          <a href="https://explorer.nyzo.net/client/json/supply.json" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-3">
+                            <img class="icon icon-md" src="assets/img/icons/theme/files/selected-file.svg" alt="selected-file icon" data-inject-svg />
+                            <div class="text-body ml-3">
+                              <span>Network metrics</span>
+                              <div class="text-small text-muted">Circulating supply & more</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li> -->
+              </ul>
+            </div><a href="knowledgebase-wallets.html" class="btn btn-primary ml-lg-3">Download wallet</a>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    
+    <section class="bg-primary-3 text-light has-divider" data-overlay>
+      <img src="https://i.imgur.com/4kwBSFT.png" alt="Image" class="bg-image opacity-50">
+      <div class="container mt-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <h1 class="h2 mb-3">The role of the sentinel</h1>
+            <div class="d-flex text-small">
+              <span class="text-muted">Explains the importance of & how and when the sentinel interacts with the network</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider">
+        <img src="assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
+      </div>
+    </section>
+
+    <section class="pb-0 pb-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="knowledgebase.html">Knowledgebase</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="knowledgebase-proof-of-diversity.html">Proof of Diversity</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="#">The role of the sentinel</a>
+                  </li>
+                </ol>
+              </nav>
+              <!-- <span class="badge bg-primary-alt text-primary">
+                <img class="icon bg-primary" src="assets/img/icons/interface/heart.svg" alt="heart interface icon" data-inject-svg />21</span> -->
+            </div>
+            <h1>The role of the sentinel</h1>
+            <div class="d-flex align-items-center">
+              <a href="#">
+                <img src="https://forum.nyzo.community/user_avatar/forum.nyzo.community/snipe/120/307_2.png" alt="Avatar" class="avatar mr-2">
+              </a>
+              <div>
+                <div>by <a href="https://forum.nyzo.community/u/Snipe/">0xSnipe</a>
+                </div>
+                <div class="text-small text-muted">01/04/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-0" data-reading-position>
+      <div class="container">
+        <div class="row justify-content-center position-relative">
+          <div class="col-lg-10 col-xl-8">
+            <img src="https://cdn.discordapp.com/attachments/624369209173999617/672797970328190986/My_Post41.png" alt="Image" class="rounded">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <article class="article">
+              <p class="lead">
+                The sentinel
+              </p>
+              <p>
+                An important component of the Nyzo network is the sentinel. To go in-depth about the role of the sentinel, it is necessary that we first set up a Nyzo sentinel on a new Virtual Private Server (VPS).<br><br>
+                Details on how to accomplish this have been laid out on the '<a href="getting-started-02.html" target="_blank">How to set up a sentinel</a>' page, found in the '<a href="knowledgebase-getting-started.html" target="_blank">Getting started</a>' section of the <a href="knowledgebase.html" target="_blank">Knowledgebase</a>.
+              </p>
+              <p>
+                
+              </p>
+              <h4>Initial configuration of the sentinel</h4>
+              <p>
+                <br>Similar to the configuration procedure of a verifier, but with important distinctions in regards to selecting and configuring the run mode of the <a href="github.html" target="_blank">nyzoVerifier software</a>.<br><br>
+                During the installation process, various events take place:<br>
+                <ul>
+                  <li>a directory <b>/home/ubuntu</b> is created (<a href="getting-started-02.html" target="_blank">non-AWS installation only</a>)</li>
+                  <li>port 9444 is opened for incoming and outgoing <a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol" target="_blank">TCP</a> connections</li>
+                  <li>port 9446 is opened for incoming and outgoing <a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol">UDP</a> connections</li>
+                  <li>the linux distribution is updated through <a href="https://en.wikipedia.org/wiki/Advanced_Packaging_Tool" target="_blank">apt</a></li>
+                  <li><a href="https://wiki.archlinux.org/index.php/Haveged" target="_blank">haveged</a> is installed on the machine</li>
+                  <li><a href="https://openjdk.java.net/install/" target="_blank">openjdk-8</a> is installed on the machine</li>
+                  <li><a href="http://supervisord.org" target="_blank">supervisor</a> is installed on the machine</li>
+                  <li><a href="https://git-scm.com" target="_blank">git</a> is installed on the machine</li>
+                  <li>the <a href="github.html">nyzoVerifier repository</a> is cloned</li>
+                  <li>the cloned files now residing in <b>/home/ubuntu/nyzoVerifier</b> are compiled using <a href="https://docs.gradle.org/current/userguide/gradle_wrapper.html" target="_blank">gradlew</a></li>
+                  <li>a new directory is created: <b>/var/lib/nyzo/production</b></li>
+                  <li>the <b>nyzoSentinel.conf</b> file is copied to the <b>/etc/supervisor/conf.d</b> directory to configure supervisor</li>
+                  <li>the <b>managed_verifiers</b> file is configured by the node operator</li>
+                  <li>supervisor is initiated using the <b>sudo supervisorctl reload</b> command</li>
+                  <li>the status of the supervisor application is displayed using the <b>sudo supervisorctl status</b> command</li>
+                  <li>an entry for the <b>sudo supervisorctl reload</b> command is added as a <a href="https://en.wikipedia.org/wiki/Cron" target="_blank">cronjob</a>, to enable automatic execution after reboot</li>
+                </ul>
+              </p>
+              <h4>nyzoSentinel.conf</h4>
+              <p>
+                 The nyzoSentinel.conf file is used to correctly configure the supervisor.<br>The supervisor package available for linux distributions, essentially, as the name suggests, supervises the particular process under the parametered conditions specified in the configuration file.<br><br>The parameters set forth in the file by default excert the following behavior on the process:<br>
+              
+                <ul><li><b>autostart</b> is enabled</li><li><b>autorestart</b> is enabled</li><li>the minimum amount of time the process needs to stay up and running to be considered a successful start is 10 seconds and is configured using the <b>startsecs</b> parameter</li><li>the maximum amount of iterations the supervisor will go through, when the startsecs parameter condition is not met in a consecutive amount of times is by default 20 and is configured using the <b>startretries</b> parameter. After this condition is met, the process resides in a <b>FATAL</b> state</li><li>regular output by the process is by default written to <b>/var/log/nyzo-sentinel-stdout.log</b> and is governed by the <b>stdout_logfile</b> parameter</li><li>error output by the process is by default written to <b>/var/log/nyzo-sentinel-stderr.log</b> and is governed by the <b>stderr_logfile</b> parameter</li><li>both files have a default cap of 10MB per log file to ensure that the act of writing to said files doesn't become a memory-heavy burden for the sentinel.<br>This limit is imposed by the <b>stdout_logfile_maxbytes</b> and <b>stderr_logfile_maxbytes</b> parameters.</li><li>the command necessary for executing the compiled jar file is added to the <b>command</b> parameter</li></ul>
+              </p>
+              <h4>managed_verifiers</h4>
+              <p>
+                As explained in the <a href="getting-started-02.html" target="_blank">sentinel installation tutorial</a>, the node operator enters a list of verifiers into the file. These are the verifiers which will be watched over by the sentinel. The verifiers in this file will also act as the primary source for information about the cycle, so make sure that at least some of them have the <b>always_track_blockchain=1</b> parameter set in the preferences file of the verifier.
+              </p>
+              <h4>Running</h4>
+              <p>
+                After the <b>sudo supervisorctl reload</b> command has been invoked, the sentinel continuously contacts the verifiers listed in the <b>managed_verifiers</b> file, this communication between the listed verifiers and the sentinel happens in parallel. <br><br>If one of the verifiers from the list is unresponsive, the sentinel steps in to produce a block for that verifier.<br><br>This is important, because, <a href="proof-of-diversity-01.html" target="_blank">as we know</a>, the verifier drops out of the cycle if it fails to produce a block when it is expected to do so.<br><br>Next to protecting the verifiers from dropping out of the cycle when they unexpectedly become unresponsive, it can also aid cycle candidates in joining the cycle.<br><br>The propensity for a bad actor to attack a verifier (for example through the use of a <a href="https://en.wikipedia.org/wiki/Denial-of-service_attack" target="_blank">DDoS attack</a>) is at its highest when it is expected to produce a block or if it is being voted for to join the cycle.<br><br>It is exactly at those moments that having a sentinel is important as it has the power to stealthily produce a block (from a separate, not prematurely announced IPv4 address) - and the right to act as a substitute for the production of a block during the time where the verifier being voted for has the opportunity to produce a block, and thus has the opportunity to claim the rights to join the cycle.
+</p>
+
+              <h4>Common to consider</h4>
+              <p>As the power of the sentinel comes from it acting as a shadow node to stealthily produce blocks, it is common to consider running multiple sentinels from different VPS host providers as a matter of redundancy or to switch the IPv4 address from which the sentinel broadcasts its communications regularly, as it exposes itself after every intervention.</p>
+            
+              <!-- <div class="col text-center"> 
+                <a href="proof-of-diversity-02.html" class="btn btn-lg btn-primary">
+                  The role of the sentinel
+                </a>
+            </div> -->
+              
+        
+        
+
+            <!-- <div class="row justify-content-center position-relative">
+              <div class="col-lg-10 col-xl-8">
+                <img src="https://i.imgur.com/y78SML3.png" alt="Image" class="rounded">
+              </div>
+            </div> -->
+              
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="has-divider">
+      <div class="container pt-3">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <hr> <!-- write js script to auto populate this with the current url TODO -->
+            <div class="d-flex align-items-center">
+              <span class="text-small mr-1">Share this article:</span>
+              <div class="d-flex mx-2">
+                <a id='shareTwitterToPopulate' href="#" class="btn btn-round btn-primary mx-1">
+                  <img class="icon icon-sm" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+                </a>
+                <a id='shareFacebookToPopulate' href="#" class="btn btn-round btn-primary mx-1">
+                  <img class="icon icon-sm" src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
+                </a>
+                
+              </div>
+            </div>
+            <hr>
+            
+          </div>
+        </div>
+      </div>
+      <div class="divider">
+        <img class="bg-primary-3" src="assets/img/dividers/divider-3.svg" alt="divider graphic" data-inject-svg />
+      </div>
+    </section>
+
+    <footer class="pb-4 bg-primary-3 text-light" id="footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col">
+            <div class="card card-body border-0 o-hidden mb-0 bg-primary text-light">
+              <div class="position-relative d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="h3 text-center mb-md-0">Start building & get rewarded</div>
+                <a href="ncfp.html" class="btn btn-lg btn-white">
+      Discover NCFP's
+    </a>
+              </div>
+             
+            </div>
+
+          </div>
+        </div>
+       
+        <div class="row justify-content-center mb-2">
+          <div class="col-auto">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="https://www.instagram.com/nyzo_currency" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/instagram.svg" alt="instagram social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://twitter.com/nyzo_currency" target='_blank' class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/youtube.svg" alt="youtube social icon" data-inject-svg />
+                </a>
+              </li> -->
+              <li class="nav-item">
+                <a href="https://medium.co/@nyzoco" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/medium.svg" alt="medium social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.facebook.com/nyzoblockchain/" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="github.html" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/theme/social/github.svg" alt="github social icon" data-inject-svg />
+                </a>
+              </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-md-auto text-center">
+            <small class="text-muted">&copy;2020 This page is protected by reCAPTCHA and is subject to the Google <a href="https://www.google.com/policies/privacy/">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service.</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+      <img class="icon" src="assets/img/icons/theme/navigation/arrow-up.svg" alt="arrow-up icon" data-inject-svg />
+    </a>
+
+    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <!-- Clipboard (copies content from browser into OS clipboard) -->
+    <script type="text/javascript" src="assets/js/clipboard.js"></script>
+    <!-- Fancybox (handles image and video lightbox and galleries) -->
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <!-- Flatpickr (calendar/date/time picker UI) -->
+    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+    <!-- Flickity (handles touch enabled carousels and sliders) -->
+    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+    <!-- Isotope (masonry layouts and filtering) -->
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- jarallax (parallax effect and video backgrounds) -->
+    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- jQuery smartWizard facilitates steppable wizard content -->
+    <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+    <!-- Prism (displays formatted code boxes) -->
+    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+    <!-- Smooth scroll (animation to links in-page)-->
+    <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+    <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
+    <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+    <!-- Typed text (animated typing effect)-->
+    <script type="text/javascript" src="assets/js/typed.min.js"></script>
+    <!-- Required theme scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/theme.js"></script>
+    <!-- Removes page load animation when window is finished loading -->
+    <script type="text/javascript">
+      window.addEventListener("load", function () {    document.querySelector('body').classList.add('loaded');  });
+    </script>
+
+    <script type="text/javascript">
+      function initShareLinks(){
+        curr_pos = window.location.href;
+        document.getElementById('shareTwitterToPopulate').href= 'https://twitter.com/share?url=' + encodeURI(curr_pos);
+        document.getElementById('shareFacebookToPopulate').href= 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURI(curr_pos);
+      }
+      initShareLinks();
+    </script>
+  </body>
+
+</html>

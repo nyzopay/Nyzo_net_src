@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Nyzo.net - Knowledgebase - Wallets - Client</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explains how to use the Nyzo client wallet and how to install it.">
+    <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="icon" href="amp/favicon.ico">
+        <!-- Required vendor scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171082179-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171082179-1');
+</script>
+
+  </head>
+
+  <body>
+    <div class="loader">
+      <div class="loading-animation"></div>
+    </div>
+
+    <div class="navbar-container ">
+      <nav class="navbar navbar-expand-lg navbar-dark" data-overlay data-sticky="top">
+        <div class="container">
+          <a class="navbar-brand fade-page" href="knowledgebase.html">
+            <img src="assets/img/nyzlogo.png" alt="Nyzo" style='max-height:4.5rem;'>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg" alt="menu interface icon" data-inject-svg />
+            <img class="icon navbar-toggler-close" src="assets/img/icons/interface/cross.svg" alt="cross interface icon" data-inject-svg />
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <div class="py-2 py-lg-0">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a href="ncfp.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">NCFP</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="github.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">Github</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="mobile.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">Mobile</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Explorer</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu"><a target='_blank' href="https://nyzo.co" class="dropdown-item fade-page">Official explorer</a><a target='_blank' href="https://explorer.nyzo.net" class="dropdown-item fade-page">Web explorer<span class="badge badge-primary ml-2">New</span></a><a target='_blank' href="https://explorer.nyzo.net/client/richlist.html"
+                        class="dropdown-item fade-page">Richlist<span class="badge badge-primary ml-2">New</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Community</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu"><a href="https://forum.nyzo.community" class="dropdown-item fade-page">Forum<span class="badge badge-primary ml-2">New</span></a><a href="https://nyzo.ondiscord.net" class="dropdown-item fade-page">Discord</a><a href="https://t.me/NyzoCo"
+                        class="dropdown-item fade-page">Telegram</a><a href="https://twitter.com/nyzo_currency" class="dropdown-item fade-page">Twitter</a><a href="https://www.facebook.com/nyzoblockchain/" class="dropdown-item fade-page">Facebook</a><a href="https://weibo.com/nyzoco"
+                        class="dropdown-item fade-page">Weibo</a><br><a href="https://nyzo.io"
+                        class="dropdown-item fade-page">Nyzo.io</a><a href="https://nyzo.xyz"
+                        class="dropdown-item fade-page">Nyzo.xyz</a><a href="https://nyzo.today"
+                        class="dropdown-item fade-page">Nyzo.today</a><a href="https://nyzo.me"
+                        class="dropdown-item fade-page">Nyzo.me (cn)</a><br><a href="https://weibo.com/nyzoco"
+                        class="dropdown-item fade-page">QQ: 1007477423</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="http://78.47.221.148" target="_blank" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">Docs</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Exchanges</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu"><a href="https://buy.nyzo.net" class="dropdown-item fade-page">Qtrade.io<span class="badge badge-primary ml-2">Hot</span></a><a href="https://bilaxy.com" class="dropdown-item fade-page">Bilaxy</a><a href="https://bihodl.com"
+                        class="dropdown-item fade-page">Bihodl</a><a href="https://hotbit.io"
+                        class="dropdown-item fade-page">Hotbit</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!--<li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">API</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto px-0" data-dropdown-content>
+                      <div class="bg-white rounded border shadow-lg o-hidden">
+                        <div class="list-group list-group-flush">
+                          <a href="https://explorer.nyzo.net/client/json/balance_list.json" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-3">
+                            <img class="icon icon-md" src="assets/img/icons/theme/files/selected-file.svg" alt="selected-file icon" data-inject-svg />
+                            <div class="text-body ml-3">
+                              <span>Balance list</span>
+                              <div class="text-small text-muted">Sorted numerically</div>
+                            </div>
+                          </a>
+                          <a href="https://explorer.nyzo.net/client/json/supply.json" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-3">
+                            <img class="icon icon-md" src="assets/img/icons/theme/files/selected-file.svg" alt="selected-file icon" data-inject-svg />
+                            <div class="text-body ml-3">
+                              <span>Network metrics</span>
+                              <div class="text-small text-muted">Circulating supply & more</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li> -->
+              </ul>
+            </div><a href="knowledgebase-wallets.html" class="btn btn-primary ml-lg-3">Download wallet</a>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    
+    <section class="bg-primary-3 text-light has-divider" data-overlay>
+      <img src="https://i.imgur.com/4kwBSFT.png" alt="Image" class="bg-image opacity-50">
+      <div class="container mt-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <h1 class="h2 mb-3">Client wallet</h1>
+            <!-- <form>
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon-1">
+                    <img class="icon" src="assets/img/icons/theme/general/search.svg" alt="search icon" data-inject-svg />
+                  </span>
+                </div>
+                <input type="search" class="form-control" placeholder="Search the Nyzo knowledgebase" aria-label="Search" aria-describedby="basic-addon-1">
+              </div>
+            </form> -->
+            <div class="d-flex text-small">
+              <span class="text-muted">Explains how to use the Nyzo client wallet created by the developers</span>
+              <!-- <ul class="list-unstyled d-flex ml-2 flex-wrap">
+                <li class="mx-1"><a href="#">Verifier installation,</a>
+                </li>
+                <li class="mx-1"><a href="#">Nyzo wallets,</a>
+                </li>
+                <li class="mx-1"><a href="#">How to join the network</a>
+                </li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider">
+        <img src="assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
+      </div>
+    </section>
+
+    <section class="pb-0 pb-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="knowledgebase.html">Knowledgebase</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="knowledgebase-wallets.html">Wallets</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="#">Client wallet</a>
+                  </li>
+                </ol>
+              </nav>
+              <!-- <span class="badge bg-primary-alt text-primary">
+                <img class="icon bg-primary" src="assets/img/icons/interface/heart.svg" alt="heart interface icon" data-inject-svg />21</span> -->
+            </div>
+            <h1>Client wallet</h1>
+            <div class="d-flex align-items-center">
+              <a href="#">
+                <img src="https://forum.nyzo.community/user_avatar/forum.nyzo.community/snipe/120/307_2.png" alt="Avatar" class="avatar mr-2">
+              </a>
+              <div>
+                <div>by <a href="https://forum.nyzo.community/u/Snipe/">0xSnipe</a>
+                </div>
+                <div class="text-small text-muted">28/03/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-0" data-reading-position>
+      <div class="container">
+        <div class="row justify-content-center position-relative">
+          <div class="col-lg-10 col-xl-8">
+            <img src="https://media.discordapp.net/attachments/624369209173999617/672797950992449536/My_Post44.png?width=1245&height=701" alt="Image" class="rounded">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <article class="article">
+              <p class="lead">
+                Using the Nyzo client wallet
+              </p>
+              <p>
+                If you're somewhat proficient with handling command line tools, you will find little to no obstacles using the client. If not, this page goes into as much detail as possible to make sure you know your way around the client.<br><br>The first step to using the client is for you to install a Nyzo verifier or sentinel.<br><a href="knowledgebase-getting-started.html">Tutorials for doing so can be found in the Getting started section of the Knowledgebase.</a>
+              </p>
+              <p>
+                
+              </p>
+              <h4>Functions</h4>
+              <p>
+                To determine if use of the Nyzo client is necessary for the task you're looking to complete, I'll go through the full scope of what the client can do first.<br>
+                <ul>
+                  <li>display wallet balances</li>
+                  <li>send a standard transaction</li>
+                  <li>create Nyzo strings for a private seed</li>
+                  <li>create Nyzo string for a public identifier</li>
+                  <li>create a Nyzo prefilled-data transaction</li>
+                  <li>send a cycle transaction</li>
+                  <li>list cycle transactions</li>
+                  <li>sign a cycle transaction</li>
+                  <li>generate NTTP sender data</li>
+                  <li>search for transactions in the blockchain</li>
+                  <li>display coins in circulation</li>
+                  <li>display the frozen edge</li>
+                  <li>forward a transaction</li>
+                </ul>
+              </p>
+              <h4>Initiating the client</h4>
+              <p>
+                After using SSH to access your verifier, use the following command as outlined on the <a target="_blank" href="getting-started-05.html">Commands page of the Knowledgebase:</a><br>
+                 <pre class='language-bash'>cd /home/ubuntu/nyzoVerifier
+sudo java -jar build/libs/nyzoVerifier-1.0.jar co.nyzo.verifier.client.Client</pre>
+              </p>
+              <h4>Using the client</h4>
+              <p>
+                After initiation of the client, a window accepting user input opens and should look more or less like following (depending on the version of Nyzo verifier you're using):<br><br>
+                <img src="https://i.imgur.com/iTLpGzg.png"><br><br>
+                Next is to enter the command of your choosing into the user input field, this can be either the short command or the full command.<br>I will go through the entire set of possibilities in the section down below.<br><br>
+                <img src="https://i.imgur.com/EHDXoXB.png">
+              </p>
+              <h4>Commands</h4>
+              <p>Each command segment down below will contain an overview of the arguments which that command expects to receive, the output of that command and what both the input and output may look like through the use of exemplary data.</p>
+              <h4>BL - balance</h4>
+              <p>Display wallet balances.<br><i>This command accepts the following arguments in succession:</i><br>
+                <ul>
+                  <li>wallet ID or prefix:
+                    <ul>
+                      <li>4402e5d532b576fb-70cac2f508caa3bf-673503ecc17c3ac2-163b06c5b50415a4</li>
+                      <li>id__84g2XukQKosZtcI2.gAaFZ.EdgfJNoNYNypZ1JnT11nBI_n9yaSa</li>
+                    </ul>
+                  </li>
+                </ul><br>
+                <i>The result of executing this command returns:</i><br><br>
+                <ul>
+                  <li>verifier block height<ul><li>6947063</li></ul></li>
+                  <li>wallet identifier<ul><li>4402e5d532b576fb-70cac2f508caa3bf-673503ecc17c3ac2-163b06c5b50415a4</li></ul></li>
+                  <li>wallet identifier NyzoString<ul><li>id__84g2XukQKosZtcI2.gAaFZ.EdgfJNoNYNypZ1JnT11nBI_n9yaSa</li></ul></li>
+                  <li>balance<ul><li>∩90.910235</li></ul></li>
+                </ul>
+              </p>
+
+              <h4>ST - send</h4>
+              <p>Send a standard transaction.<br><i>This command accepts the following arguments in succession:</i><br>
+                <ul>
+                  <li>sender key:
+                    <ul>
+                      <li>key_8a2B4csRaX5tIHbRigRIUsRsPuLHfN2w_KVG-eQcSV5GTQuoFbpe</li>
+                    </ul>
+                  </li>
+                  <li>receiver ID:
+                    <ul>
+                      <li>id__84g2XukQKosZtcI2.gAaFZ.EdgfJNoNYNypZ1JnT11nBI_n9yaSa</li>
+                    </ul>
+                  </li>
+                  <li>sender data (max 32 bits):
+                    <ul>
+                      <li>01234567890123456789012345678901</li>
+                    </ul>
+                  </li>
+                  <li>amount in Nyzos:
+                    <ul>
+                      <li>25</li>
+                    </ul>
+                  </li>
+                </ul><hr>
+                Before the command will be executed by the client, it has to be reviewed and approved by the user.<br>An example of such an approval screen looks as follows:<br><br>
+                <img src="https://i.imgur.com/5afsPjs.png"><hr>
+                <i>The result of approving and therefore executing this command returns:</i><br><br>
+                <ul>
+                  <li>status message<ul><li>transaction not accepted by ab3a...957c<br>transaction not processed</li></ul></li>
+                </ul>
+                <br>In this example the status message indicates a failure, this is due to the sender key not holding a balance. Expect to see a different output when a valid transaction is sent to the network.
+              </p>
+
+              <h4>NSS - seedString</h4>
+              <p>Create Nyzo strings for a private seed.<br><i>This command accepts the following arguments in succession:</i><br>
+                <ul>
+                  <li>private key:
+                    <ul>
+                      <li>4402e5d532b576fb-70cac2f508caa3bf-673503ecc17c3ac2-163b06c5b50415a3</li>
+                    </ul>
+                  </li>
+                </ul><br>
+                <i>The result of executing this command returns:</i><br><br>
+                <ul>
+                  <li>private seed (raw)<ul><li>4402e5d532b576fb-70cac2f508caa3bf-673503ecc17c3ac2-163b06c5b50415a3</li></ul></li>
+                  <li>private seed (Nyzo string)<ul><li>key_84g2XukQKosZtcI2.gAaFZ.EdgfJNoNYNypZ1JnT11nAUJ7K.tND</li></ul></li>
+                  <li>public ID (raw)<ul><li>f02a29b19197599e-9e24b977b3c5b60a-3076dc627100fc0c-aee047d8cbb4873f</li></ul></li>
+                  <li>public ID (Nyzo string)<ul><li>id__8f0Has6hCTDvEziXuZf5KxFNuKPztg3-3aZxh.AbK8t_JRHDXM_k</li></ul></li>
+                </ul>
+              </p>
+
+              <h4>NIS - idString</h4>
+              <p>Create Nyzo string for a public ID.<br><i>This command accepts the following arguments in succession:</i><br>
+                <ul>
+                  <li>public ID:
+                    <ul>
+                      <li>f02a29b19197599e-9e24b977b3c5b60a-3076dc627100fc0c-aee047d8cbb4873f</li>
+                    </ul>
+                  </li>
+                </ul><br>
+                <i>The result of executing this command returns:</i><br><br>
+                <ul>
+                  <li>public ID (raw)<ul><li>f02a29b19197599e-9e24b977b3c5b60a-3076dc627100fc0c-aee047d8cbb4873f</li></ul></li>
+                  <li>public ID (Nyzo string)<ul><li>id__8f0Has6hCTDvEziXuZf5KxFNuKPztg3-3aZxh.AbK8t_JRHDXM_k</li></ul></li>
+                </ul>
+              </p>
+
+              <h4>PRC - createPrefill</h4>
+              <p>Create a Nyzo prefilled-data string.<br><i>This command accepts the following arguments in succession:</i><br>
+                <ul>
+                  <li>receiver ID:
+                    <ul>
+                      <li>id__8f0Has6hCTDvEziXuZf5KxFNuKPztg3-3aZxh.AbK8t_JRHDXM_k</li>
+                    </ul>
+                  </li>
+                  <li>sender data:
+                    <ul>
+                      <li>01234567890123456789012345678901</li>
+                    </ul>
+                  </li>
+                </ul><br>
+                <i>The result of executing this command returns:</i><br><br>
+                <ul>
+                  <li>receiver ID (raw)<ul><li>id__8f0Has6hCTDvEziXuZf5KxFNuKPztg3-3aZxh.AbK8t_JRHDXM_k</li></ul></li>
+                  <li>sender data<ul><li>01234567890123456789012345678901</li></ul></li>
+                  <li>prefilled-data string<ul><li>pre_gw0Has6hCTDvEziXuZf5KxFNuKPztg3-3aZxh.AbK8t_830PcAcSdjpVe3BNcj8Rd3kUdRxXc34QcRgTdAtWej0PaU~W5dYx</li></ul></li>
+                </ul>
+              </p>
+
+              <h4>PRS - sendPrefill</h4>
+              <p>Send a prefilled-data transaction.<br><i>This command accepts the following arguments in succession:</i><br>
+                <ul>
+                  <li>sender key:
+                    <ul>
+                      <li>key_8a2B4csRaX5tIHbRigRIUsRsPuLHfN2w_KVG-eQcSV5GTQuoFbpe</li>
+                    </ul>
+                  </li>
+                  <li>prefilled-data string:
+                    <ul>
+                      <li>pre_gw0Has6hCTDvEziXuZf5KxFNuKPztg3-3aZxh.AbK8t_830PcAcSdjpVe3BNcj8Rd3kUdRxXc34QcRgTdAtWej0PaU~W5dYx</li>
+                    </ul>
+                  </li>
+                  <li>amount in Nyzos:
+                    <ul>
+                      <li>25</li>
+                    </ul>
+                  </li>
+                </ul><hr>
+                Before the command will be executed by the client, it has to be reviewed and approved by the user.<br>An example of such an approval screen looks as follows:<br><br>
+                <img src="https://i.imgur.com/42pU5Ge.png"><hr>
+                <i>The result of approving and therefore executing this command returns:</i><br><br>
+                <ul>
+                  <li>status message<ul><li>transaction not accepted by ab3a...957c<br>transaction not processed</li></ul></li>
+                </ul>
+                <br>In this example the status message indicates a failure, this is due to the sender key not holding a balance. Expect to see a different output when a valid transaction is sent to the network.
+              </p>
+
+              <h4>CTS - cycleSend</h4>
+              <p>Send a cycle transaction.<br><i>This command accepts the following arguments in succession:</i><br>
+                <ul>
+                  <li>initiator key (in-cycle verifier):
+                    <ul>
+                      <li>key_8a2B4csRaX5tIHbRigRIUsRsPuLHfN2w_KVG-eQcSV5GTQuoFbpe</li>
+                    </ul>
+                  </li>
+                  <li>receiver ID:
+                    <ul>
+                      <li>id__8f0Has6hCTDvEziXuZf5KxFNuKPztg3-3aZxh.AbK8t_JRHDXM_k</li>
+                    </ul>
+                  </li>
+                  <li>sender data:
+                    <ul>
+                      <li>tutorial_test</li>
+                    </ul>
+                  </li>
+                  <li>amount in Nyzos:
+                    <ul>
+                      <li>25</li>
+                    </ul>
+                  </li>
+                </ul><hr>
+                Before the command will be executed by the client, it has to be reviewed and approved by the user.<br>An example of such an approval screen looks as follows:<br><br>
+                <img src="https://i.imgur.com/SYvici1.png"><hr>
+                <i>The result of approving and therefore executing this command returns:</i><br><br>
+                <ul>
+                  <li>message queue information</li>
+                </ul>
+                <img src="https://i.imgur.com/MbJNGxc.png"><br>
+                <br>The workings of the CTS command are expected to be changed after integration of <a href="http://tech.nyzo.co/releaseNotes/v573" target="_blank">Version 573</a> (<a href="tech.nyzo.co/teamTechnologyProposals/nttp3" target="_blank">NTTP-3</a>). Until this notice does not appear any longer, the contents of this command have not been updated post <a href="http://tech.nyzo.co/teamTechnologyProposals/nttp3#implementation" target="_blank">blockchain v2 integration</a>.
+              </p>
+
+              <h4>CTL - cycleList</h4>
+              <p>List cycle transactions.<br><i>This command accepts the following arguments in succession:</i><br>
+                <ul>
+                  <li>in-cycle verifier key (leave empty to list locally stored transactions):
+                    <ul>
+                      <li>key_8a2B4csRaX5tIHbRigRIUsRsPuLHfN2w_KVG-eQcSV5GTQuoFbpe</li>
+                    </ul>
+                  </li>
+                </ul><br>
+                <i>The result of executing this command returns:</i><br><br>
+                <ul>
+                  <li>warning<ul><li>the verifier you specified does not appear to be in the cycle</li></ul></li>
+                  <li>no cycle transactions available</li>
+                </ul>
+                <br>The workings of the CTL command are expected to be changed after integration of <a href="http://tech.nyzo.co/releaseNotes/v573" target="_blank">Version 573</a> (<a href="tech.nyzo.co/teamTechnologyProposals/nttp3" target="_blank">NTTP-3</a>). Until this notice does not appear any longer, the contents of this command have not been updated post <a href="http://tech.nyzo.co/teamTechnologyProposals/nttp3#implementation" target="_blank">blockchain v2 integration</a>.
+              </p>
+
+              <h4>CTX - cycleSign</h4>
+              <p>Sign a cycle transaction.<br><i>This command accepts the following arguments in succession:</i><br>
+                <ul>
+                  <li>transaction index to sign (from cycleList/CTL command):
+                    <ul>
+                      <li>4e5454502d333a20c835d176f8502b9a0d7b0b7eeb65653dad90094c</li>
+                    </ul>
+                  </li>
+                  <li>signer key:
+                    <ul>
+                      <li>key_8a2B4csRaX5tIHbRigRIUsRsPuLHfN2w_KVG-eQcSV5GTQuoFbpe</li>
+                    </ul>
+                  </li>
+                </ul><br>
+                <i>The result of executing this command returns:</i><br><br>
+                <ul>
+                  <li>warning<ul><li>the verifier you specified does not appear to be in the cycle</li></ul></li>
+                  <li>no cycle transactions available</li>
+                </ul>
+                <br>The workings of the CTL command are expected to be changed after integration of <a href="http://tech.nyzo.co/releaseNotes/v573" target="_blank">Version 573</a> (<a href="tech.nyzo.co/teamTechnologyProposals/nttp3" target="_blank">NTTP-3</a>). Until this notice does not appear any longer, the contents of this command have not been updated post <a href="http://tech.nyzo.co/teamTechnologyProposals/nttp3#implementation" target="_blank">blockchain v2 integration</a>.
+              </p>
+
+              <h4>NTTP - nttpGenerate</h4>
+              <p>Generate NTTP sender data.<br><i>This command accepts the following arguments in succession:</i><br>
+                <ul>
+                  <li>NTTP number:
+                    <ul>
+                      <li>1</li>
+                    </ul>
+                  </li>
+                  <li>Git hash:
+                    <ul>
+                      <li>b72063fdd1d15bdccaf6e4ebb2ee9094be40dae6</li>
+                    </ul>
+                  </li>
+                </ul><br>
+                <i>The result of executing this command returns:</i><br><br>
+                <ul>
+                  <li>notice<ul><li>"Please use this in the sender-data field of the cycle-transaction send command (CTS/cycleSend) to initiate a vote for NTTP-5 at commit b72063fdd1d15bdccaf6e4ebb2ee9094be40dae6."</li></ul></li>
+                  <li>NTTP number<ul><li>1</li></ul></li>
+                  <li>Git hash<ul><li>b72063fdd1d15bdccaf6e4ebb2ee9094be40dae6</li></ul></li>
+                  <li>sender data<ul><li>X(4e5454502d353a20b72063fdd1d15bdccaf6e4ebb2ee9094be40dae6________)</li></ul></li>
+                </ul>
+              </p>
+
+              <h4>TS - transactionSearch</h4>
+              <p>Search for transactions in the blockchain.<br><i>This command accepts the following arguments in succession:</i><br>
+                <ul>
+                  <li>timestamp (optional):
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li>block height (optional):
+                    <ul>
+                      <li>6957083</li>
+                    </ul>
+                  </li>
+                  <li>Nyzo string (optional):
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                </ul><br>
+                <i>The result of executing this command returns:</i><br><br>
+                <ul>
+                  <li>notice<ul><li>Using block height of 6957083 for search</li></ul></li>
+                  <li>height<ul><li>6957083</li></ul></li>
+                  <li>timestamp (ms)<ul><li>1585496382000</li></ul></li>
+                  <li>type value (transaction type)<ul><li>1</li></ul></li>
+                  <li>type<ul><li>seed</li></ul></li>
+                  <li>amount<ul><li>∩448.373215</li></ul></li>
+                  <li>receiver ID<ul><li>12d454a69523f739-eb5eb71c7deb8701-1804df336ae0e2c1-9e0b24a636683e31</li></ul></li>
+                  <li>sender ID<ul><li>12d454a69523f739-eb5eb71c7deb8701-1804df336ae0e2c1-9e0b24a636683e31</li></ul></li>
+                  <li>previous hash height<ul><li>0</li></ul></li>
+                  <li>sender data<ul><li></li></ul></li>
+                  <li>transaction (Nyzo string)<ul><li>tx__Dx400005P <b>...</b> HNI.d.</li></ul></li>
+                </ul>
+              </p>
+
+              <h4>CC - circulation</h4>
+              <p>Display coins in circulation.<br><i>This command does not accept any arguments.</i><br><i>The result of executing this command returns:</i><br><ul>
+                <li>block height<ul><li>6957158</li></ul></li>
+                <li>coins in system<ul><li>6957158</li></ul></li>
+                <li>locked account sum<ul><li>- ∩552,735.765942</li></ul></li>
+                <li>unlock threshold<ul><li>+ ∩216,553.548270</li></ul></li>
+                <li>unlock transfer sum<ul><li>- ∩0.033592</li></ul></li>
+                <li>seed account balance<ul><li>- ∩10,938,753.520749</li></ul></li>
+                <li>transfer account balance<ul><li>- ∩0.000002</li></ul></li>
+                <li>cycle account balance<ul><li>- ∩77,120,615.429050</li></ul></li>
+                <li>coins in circulation<ul><li>= ∩11,604,448.798935</li></ul></li>
+              </ul></p>
+
+              <h4>FE - frozenEdge</h4>
+              <p>Display the frozen edge.<br><i>This command does not accept any arguments.</i><br><i>The result of executing this command returns:</i><br><ul>
+                <li>height<ul><li>6957198</li></ul></li>
+                <li>hash<ul><li>bb443323f7c0e370-f9a83c5cd221a26c-48d00591bdf5d980-965bc6720f3cb905</li></ul></li>
+                <li>verification timestamp (ms)<ul><li>1585497194647</li></ul></li>
+                <li>distance from open edge<ul><li>1</li></ul></li>
+              </ul></p>
+
+              <h4>TF - forwardTransaction</h4>
+              <p>Forward a transaction.<br><i>This command accepts the following arguments in succession:</i><br>
+                <ul>
+                  <li>transaction (Nyzo string):
+                    <ul>
+                      <li>tx__Dx900015P <b>...</b> FNI.e</li>
+                    </ul>
+                  </li>
+                </ul><br>
+                <i>The result of executing this command returns:</i><br><br>
+                <ul>
+                  <li>notice<ul><li>Progress on transaction forwarding status</li></ul></li>
+                </ul>
+              </p>
+
+              <h4>X - exit</h4>
+              <p>Use this command as an alternative to using the shortcut <b>CTRL + X</b> to close the client.</p>
+              
+              <h4>Wallets</h4>
+              <p>This page goes into detail about the client wallet only, discover other solutions available for managing and storing your Nyzo securely.</p>
+              <div class="col text-center"> 
+                <a href="knowledgebase-wallets.html" class="btn btn-lg btn-primary">
+                  Discover Wallets
+                </a>
+                
+              </div>
+              
+        
+        
+
+            <!-- <div class="row justify-content-center position-relative">
+              <div class="col-lg-10 col-xl-8">
+                <img src="https://i.imgur.com/y78SML3.png" alt="Image" class="rounded">
+              </div>
+            </div> -->
+              
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="has-divider">
+      <div class="container pt-3">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <hr> <!-- write js script to auto populate this with the current url TODO -->
+            <div class="d-flex align-items-center">
+              <span class="text-small mr-1">Share this article:</span>
+              <div class="d-flex mx-2">
+                <a id='shareTwitterToPopulate' href="#" class="btn btn-round btn-primary mx-1">
+                  <img class="icon icon-sm" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+                </a>
+                <a id='shareFacebookToPopulate' href="#" class="btn btn-round btn-primary mx-1">
+                  <img class="icon icon-sm" src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
+                </a>
+                
+              </div>
+            </div>
+            <hr>
+            
+          </div>
+        </div>
+      </div>
+      <div class="divider">
+        <img class="bg-primary-3" src="assets/img/dividers/divider-3.svg" alt="divider graphic" data-inject-svg />
+      </div>
+    </section>
+
+    <footer class="pb-4 bg-primary-3 text-light" id="footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col">
+            <div class="card card-body border-0 o-hidden mb-0 bg-primary text-light">
+              <div class="position-relative d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="h3 text-center mb-md-0">Start building & get rewarded</div>
+                <a href="ncfp.html" class="btn btn-lg btn-white">
+      Discover NCFP's
+    </a>
+              </div>
+             
+            </div>
+
+          </div>
+        </div>
+       
+        <div class="row justify-content-center mb-2">
+          <div class="col-auto">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="https://www.instagram.com/nyzo_currency" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/instagram.svg" alt="instagram social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://twitter.com/nyzo_currency" target='_blank' class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/youtube.svg" alt="youtube social icon" data-inject-svg />
+                </a>
+              </li> -->
+              <li class="nav-item">
+                <a href="https://medium.co/@nyzoco" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/medium.svg" alt="medium social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.facebook.com/nyzoblockchain/" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="github.html" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/theme/social/github.svg" alt="github social icon" data-inject-svg />
+                </a>
+              </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-md-auto text-center">
+            <small class="text-muted">&copy;2020 This page is protected by reCAPTCHA and is subject to the Google <a href="https://www.google.com/policies/privacy/">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service.</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+      <img class="icon" src="assets/img/icons/theme/navigation/arrow-up.svg" alt="arrow-up icon" data-inject-svg />
+    </a>
+
+    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <!-- Clipboard (copies content from browser into OS clipboard) -->
+    <script type="text/javascript" src="assets/js/clipboard.js"></script>
+    <!-- Fancybox (handles image and video lightbox and galleries) -->
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <!-- Flatpickr (calendar/date/time picker UI) -->
+    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+    <!-- Flickity (handles touch enabled carousels and sliders) -->
+    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+    <!-- Isotope (masonry layouts and filtering) -->
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- jarallax (parallax effect and video backgrounds) -->
+    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- jQuery smartWizard facilitates steppable wizard content -->
+    <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+    <!-- Prism (displays formatted code boxes) -->
+    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+    <!-- Smooth scroll (animation to links in-page)-->
+    <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+    <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
+    <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+    <!-- Typed text (animated typing effect)-->
+    <script type="text/javascript" src="assets/js/typed.min.js"></script>
+    <!-- Required theme scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/theme.js"></script>
+    <!-- Removes page load animation when window is finished loading -->
+    <script type="text/javascript">
+      window.addEventListener("load", function () {    document.querySelector('body').classList.add('loaded');  });
+    </script>
+
+    <script type="text/javascript">
+      function initShareLinks(){
+        curr_pos = window.location.href;
+        document.getElementById('shareTwitterToPopulate').href= 'https://twitter.com/share?url=' + encodeURI(curr_pos);
+        document.getElementById('shareFacebookToPopulate').href= 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURI(curr_pos);
+      }
+      initShareLinks();
+    </script>
+  </body>
+
+</html>

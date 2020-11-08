@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Nyzo.net - Mobile application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PROOF-OF-DIVERSITY blockchain. Ecologically responsible. Scalable. Fast.">
+    <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="icon" href="amp/favicon.ico">
+        <!-- Required vendor scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <style type="text/css">
+      .brightness { filter: brightness(0.0); }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171082179-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171082179-1');
+</script>
+
+  </head>
+
+  <body>
+    <div class="loader">
+      <div class="loading-animation"></div>
+    </div>
+
+
+    <div class="navbar-container ">
+      <nav class="navbar navbar-expand-lg justify-content-between navbar-light border-bottom-0 bg-white" data-sticky="top">
+        <div class="container">
+          <div class="col flex-fill px-0 d-flex justify-content-between">
+            <a class="navbar-brand mr-0 fade-page" href="knowledgebase.html">
+              <img src="assets/img/nyzlogo.png" alt="Nyzo" style='max-height:4.5rem; ' class='brightness'>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+              <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg" alt="menu interface icon" data-inject-svg />
+              <img class="icon navbar-toggler-close" src="assets/img/icons/interface/cross.svg" alt="cross interface icon" data-inject-svg />
+            </button>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end">
+            <div class="py-2 py-lg-0">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a href="ncfp.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">NCFP</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="github.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">Github</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="mobile.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">Mobile</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Explorer</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu"><a target='_blank' href="https://nyzo.co" class="dropdown-item fade-page">Official explorer</a><a target='_blank' href="https://explorer.nyzo.net" class="dropdown-item fade-page">Web explorer<span class="badge badge-primary ml-2">New</span></a><a target='_blank' href="https://explorer.nyzo.net/client/richlist.html"
+                        class="dropdown-item fade-page">Richlist<span class="badge badge-primary ml-2">New</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Community</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu"><a href="https://forum.nyzo.community" class="dropdown-item fade-page">Forum<span class="badge badge-primary ml-2">New</span></a><a href="https://nyzo.ondiscord.net" class="dropdown-item fade-page">Discord</a><a href="https://t.me/NyzoCo"
+                        class="dropdown-item fade-page">Telegram</a><a href="https://twitter.com/nyzo_currency" class="dropdown-item fade-page">Twitter</a><a href="https://www.facebook.com/nyzoblockchain/" class="dropdown-item fade-page">Facebook</a><a href="https://weibo.com/nyzoco"
+                        class="dropdown-item fade-page">Weibo</a><br><a href="https://nyzo.io"
+                        class="dropdown-item fade-page">Nyzo.io</a><a href="https://nyzo.xyz"
+                        class="dropdown-item fade-page">Nyzo.xyz</a><a href="https://nyzo.today"
+                        class="dropdown-item fade-page">Nyzo.today</a><a href="https://nyzo.me"
+                        class="dropdown-item fade-page">Nyzo.me (cn)</a><br><a href="https://weibo.com/nyzoco"
+                        class="dropdown-item fade-page">QQ: 1007477423</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="http://78.47.221.148" target="_blank" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">Docs</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Exchanges</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu"><a href="https://buy.nyzo.net" class="dropdown-item fade-page">Qtrade.io<span class="badge badge-primary ml-2">Hot</span></a><a href="https://bilaxy.com" class="dropdown-item fade-page">Bilaxy</a><a href="https://bihodl.com"
+                        class="dropdown-item fade-page">Bihodl</a><a href="https://hotbit.io"
+                        class="dropdown-item fade-page">Hotbit</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!--<li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">API</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto px-0" data-dropdown-content>
+                      <div class="bg-white rounded border shadow-lg o-hidden">
+                        <div class="list-group list-group-flush">
+                          <a href="https://explorer.nyzo.net/client/json/balance_list.json" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-3">
+                            <img class="icon icon-md" src="assets/img/icons/theme/files/selected-file.svg" alt="selected-file icon" data-inject-svg />
+                            <div class="text-body ml-3">
+                              <span>Balance list</span>
+                              <div class="text-small text-muted">Sorted numerically</div>
+                            </div>
+                          </a>
+                          <a href="https://explorer.nyzo.net/client/json/supply.json" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-3">
+                            <img class="icon icon-md" src="assets/img/icons/theme/files/selected-file.svg" alt="selected-file icon" data-inject-svg />
+                            <div class="text-body ml-3">
+                              <span>Network metrics</span>
+                              <div class="text-small text-muted">Circulating supply & more</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+
+          </div>
+         
+          <div class="collapse navbar-collapse justify-content-end col flex-fill px-0"><a href="knowledgebase-wallets.html" class="btn btn-primary ml-lg-3">Download wallet</a>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <section class="pb-0 pt-5 pt-lg-6">
+      <div class="container border-bottom">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-6 col-xl-5 text-center px-md-6 px-lg-0">
+            <h1 class="display-4">Nyzo in your pocket</h1>
+            <p class="lead">
+              Send and receive Nyzo<br> Safeguard verifiers<br>Sign cycle transactions<br>
+            </p>
+            <a href="https://play.google.com/store/apps/details?id=io.threedots.nyzo_wallet&hl=en" target="_blank" class="btn btn-primary btn-lg mt-3">Download the app</a>
+            <!-- <div class="d-flex justify-content-center mt-2">
+              <a data-fancybox href="https://vimeo.com/id" class="d-flex align-items-center">
+                <span class="btn btn-primary btn-round btn-sm">
+                  <img class="icon" src="assets/img/icons/theme/media/play.svg" alt="play icon" data-inject-svg />
+                </span>
+                <span class="text-small ml-2">Watch the video</span>
+              </a>
+            </div> -->
+          </div>
+          <div class="col-lg-6">
+            <div class="row justify-content-center">
+              <div class="col-lg-12 col-8 mt-4 mt-lg-0">
+                <img src="assets/img/mobile-app-1b.jpg" alt="Image" data-aos="fade-left">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="pt-0">
+      <div class="container mt-7">
+        <div class="row justify-content-center text-center mb-6">
+          <div class="col-xl-8 col-lg-9">
+            <h2 class="display-4 mx-xl-6">Built from scratch</h2>
+            <p class="lead">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-9">
+            <div class="video-poster rounded">
+              <a data-fancybox href="https://vimeo.com/40842620" class="btn btn-lg btn-primary btn-round">
+                <img class="icon" src="assets/img/icons/theme/media/play.svg" alt="play icon" data-inject-svg />
+              </a>
+              <img src="assets/img/article-5.jpg" alt="Image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="has-divider">
+      <div class="container pt-0">
+        <div class="row text-center">
+          <div class="col-md-4 mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="px-xl-2">
+              <div class="process-circle bg-primary mb-3 d-inline-flex">1</div>
+              <h4>Create your account</h4>
+              <p>
+                Autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="px-xl-2">
+              <div class="process-circle bg-primary-2 mb-3 d-inline-flex">2</div>
+              <h4>Build great websites</h4>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="px-xl-2">
+              <div class="process-circle bg-primary-3 mb-3 d-inline-flex">3</div>
+              <h4>Deploy and make money</h4>
+              <p>
+                Sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider">
+        <img class="bg-primary-alt" src="assets/img/dividers/divider-1.svg" alt="divider graphic" data-inject-svg />
+      </div>
+    </section> -->
+    <section class="has-divider bg-primary-alt">
+      <div class="container">
+        <div class="row justify-content-around align-items-center">
+          <div class="col-xl-3 col-lg-4 col-md-3 d-flex mb-5 mb-md-0" data-aos="fade-right">
+            <div class="row justify-content-center">
+              <div class="col-8 col-md">
+                <div class="mobile-screenshot rotate-left layer-2">
+                  <img src="assets/img/app02.png" alt="Screenshot">
+                  <img src="assets/img/iphone-xr.svg" alt="iPhone XR">
+                </div>
+                <!-- <div class="decoration-wrapper d-none d-md-block">
+                  <div class="decoration middle-y scale-2" data-jarallax-element="40">
+                    <img class="bg-primary-2" src="assets/img/decorations/deco-blob-8.svg" alt="deco-blob-8 decoration" data-inject-svg />
+                  </div>
+                  <div class="decoration left top scale-3">
+                    <img class="bg-primary" src="assets/img/decorations/deco-dots-6.svg" alt="deco-dots-6 decoration" data-inject-svg />
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-8 d-flex flex-column">
+            <div class="mb-3">
+              <span class="badge badge-primary">New features</span>
+              <h3 class="h1 mt-3">
+            Manage Nyzo your way.
+          </h3>
+              <p class="lead">
+                The mobile interface for Nyzo.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <img class="icon icon-md bg-primary" src="assets/img/icons/theme/devices/router-1.svg" alt="apple-watch icon" data-inject-svg />
+                <div class="mt-2">
+                  <h5>Send and receive</h5>
+                </div>
+                <p>
+                  View your transaction history, send and receive Nyzo coins within seconds.
+                </p>
+              </div>
+              <div class="col-6">
+                <img class="icon icon-md bg-primary" src="assets/img/icons/theme/devices/server.svg" alt="apple-watch icon" data-inject-svg />
+                <div class="mt-2">
+                  <h5>Verifier watchdog</h5>
+                </div>
+                <p>
+                  Receive automated notifications when your verifier requires intervention.
+                </p>
+              </div>
+              <div class="col-12 mt-3">
+                <img class="icon icon-md bg-primary" src="assets/img/icons/theme/devices/display-1.svg" alt="airpods icon" data-inject-svg />
+                <div class="mt-2">
+                  <h5>Community fund proposals</h5>
+                </div>
+                <p>
+                  Sign cycle transactions to approve or deny cycle fund expenditures.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider flip-x">
+        <img class="bg-primary-2" src="assets/img/dividers/divider-5.svg" alt="divider graphic" data-inject-svg />
+      </div>
+    </section>
+    <!-- <section class="bg-primary-3">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-6 text-light">
+          <div class="col-xl-8 col-lg-9">
+            <h2 class="display-4 mx-xl-6">Customers love it.</h2>
+            <p class="lead">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+            </p>
+          </div>
+        </div>
+        <div class="row" data-isotope-collection>
+          <div class="col-sm-6 col-lg-4" data-isotope-item>
+            <div class="card card-body">
+              <div class="flex-grow-1 mb-3">
+                <p class="lead">
+                  &ldquo;This is a top quality product. No need to think twice before purchasing, you simply could not go wrong&rdquo;
+                </p>
+              </div>
+              <div class="avatar-author align-items-center">
+                <img src="assets/img/avatars/male-4.jpg" alt="Avatar" class="avatar">
+                <div class="ml-2">
+                  <h6>Jonathan Wilson</h6>
+                  <span>Designer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4" data-isotope-item>
+            <div class="card card-body">
+              <div class="flex-grow-1 mb-3">
+                <p class="lead">
+                  &ldquo;I was thrilled by the quality of the customer support. The team were helpful throughout the entire process, I couldn’t be happier with the results – will use again!&rdquo;
+                </p>
+              </div>
+              <div class="avatar-author align-items-center">
+                <img src="assets/img/avatars/female-1.jpg" alt="Avatar" class="avatar">
+                <div class="ml-2">
+                  <h6>Annabelle Porter</h6>
+                  <span>Developer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4" data-isotope-item>
+            <div class="card card-body">
+              <div class="flex-grow-1 mb-3">
+                <p class="lead">
+                  &ldquo;Finally, I’ve found a template that covers all bases for a bootstrapped startup. We were able to launch in days, not months.&rdquo;
+                </p>
+              </div>
+              <div class="avatar-author align-items-center">
+                <img src="assets/img/avatars/female-4.jpg" alt="Avatar" class="avatar">
+                <div class="ml-2">
+                  <h6>Anna Souzakis</h6>
+                  <span>Cusomter</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4" data-isotope-item>
+            <div class="card card-body">
+              <div class="flex-grow-1 mb-3">
+                <p class="lead">
+                  &ldquo;Once again, my expectations have been surpassed – Bravo!&rdquo;
+                </p>
+              </div>
+              <div class="avatar-author align-items-center">
+                <img src="assets/img/avatars/male-5.jpg" alt="Avatar" class="avatar">
+                <div class="ml-2">
+                  <h6>Brett Thompson</h6>
+                  <span>Designer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4" data-isotope-item>
+            <div class="card card-body">
+              <div class="flex-grow-1 mb-3">
+                <p class="lead">
+                  &ldquo;Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users.&rdquo;
+                </p>
+              </div>
+              <div class="avatar-author align-items-center">
+                <img src="assets/img/avatars/male-2.jpg" alt="Avatar" class="avatar">
+                <div class="ml-2">
+                  <h6>Ravi</h6>
+                  <span>Designer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4" data-isotope-item>
+            <div class="card card-body">
+              <div class="flex-grow-1 mb-3">
+                <p class="lead">
+                  &ldquo;What usually takes at least 2 or 3 weeks was reduced to 4 days. That in itself is invaluable.&rdquo;
+                </p>
+              </div>
+              <div class="avatar-author align-items-center">
+                <img src="assets/img/avatars/female-2.jpg" alt="Avatar" class="avatar">
+                <div class="ml-2">
+                  <h6>Abigail Roberts</h6>
+                  <span>Marketer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="o-hidden">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-6">
+          <div class="col-xl-8 col-lg-9">
+            <h2 class="display-4 mx-xl-6">Take a sneak peek</h2>
+            <p class="lead">
+              The mobile wallet provides you with an intuitive user experience to<br>manage coins, verifiers and NCFP's.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="slider-phone">
+              <img src="assets/img/iphone-xr.svg" alt="Phone" class="col-9 col-md-5 col-lg-4 col-xl-3">
+              <div data-flickity='{ "imagesLoaded": true, "wrapAround": true }'>
+                <div class="carousel-cell col-9 col-md-5 col-lg-4 col-xl-3 mx-4">
+                  <img src="assets/img/app_slide01.png" alt="Image">
+                </div>
+                <div class="carousel-cell col-9 col-md-5 col-lg-4 col-xl-3 mx-4">
+                  <img src="assets/img/app_slide02.png" alt="Image">
+                </div>
+                <div class="carousel-cell col-9 col-md-5 col-lg-4 col-xl-3 mx-4">
+                  <img src="assets/img/app_slide03.png" alt="Image">
+                </div>
+                <div class="carousel-cell col-9 col-md-5 col-lg-4 col-xl-3 mx-4">
+                  <img src="assets/img/app_slide04.png" alt="Image">
+                </div>
+                <div class="carousel-cell col-9 col-md-5 col-lg-4 col-xl-3 mx-4">
+                  <img src="assets/img/app_slide05.png" alt="Image">
+                </div>
+                <div class="carousel-cell col-9 col-md-5 col-lg-4 col-xl-3 mx-4">
+                  <img src="assets/img/app_slide06.png" alt="Image">
+                </div>
+                <div class="carousel-cell col-9 col-md-5 col-lg-4 col-xl-3 mx-4">
+                  <img src="assets/img/app_slide07.png" alt="Image">
+                </div>
+                <div class="carousel-cell col-9 col-md-5 col-lg-4 col-xl-3 mx-4">
+                  <img src="assets/img/app_slide08.png" alt="Image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row justify-content-center text-center" data-aos="fade-up">
+          <div class="col-lg-6 col-md-8">
+            <h3 class="display-4">Download it now.</h3>
+            <div class="d-sm-flex justify-content-center my-2 my-md-4">
+              <!-- <a href="https://github.com/mocomaco/Nyzo_Wallet" class="btn btn-lg btn-primary mx-sm-2 mb-3 mb-sm-0">
+                <img class="icon" src="assets/img/icons/social/apple.svg" alt="apple social icon" data-inject-svg />
+                <span>App Store</span>
+              </a> -->
+              <a href="https://play.google.com/store/apps/details?id=io.threedots.nyzo_wallet&hl=en" class="btn btn-lg btn-primary mx-sm-2 mb-3 mb-sm-0">
+                <img class="icon" src="assets/img/icons/social/googleplay.svg" alt="googleplay social icon" data-inject-svg />
+                <span>Google Play</span>
+              </a>
+            </div>
+            <div class="mx-lg-5 text-small text-muted"><a href="https://github.com/mocomaco/Nyzo_Wallet">View the source code on Github.</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <footer class="pb-4 bg-primary-3 text-light" id="footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col">
+            <div class="card card-body border-0 o-hidden mb-0 bg-primary text-light">
+              <div class="position-relative d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="h3 text-center mb-md-0">Start building beautiful websites</div>
+                <a href="#" class="btn btn-lg btn-white">
+      Purchase Now
+    </a>
+              </div>
+              <div class="decoration layer-0">
+                <img class="bg-primary-2" src="assets/img/decorations/deco-blob-1.svg" alt="deco-blob-1 decoration" data-inject-svg />
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-6 col-lg-3 col-xl-2">
+            <h5>Navigate</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Demos</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Pages</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Elements</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg">
+            <h5>Contact</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3 d-flex">
+                <img class="icon" src="assets/img/icons/theme/map/marker-1.svg" alt="marker-1 icon" data-inject-svg />
+                <div class="ml-3">
+                  <span>348 Greenpoint Avenue
+                    <br />Brooklyn, NY</span>
+                </div>
+              </li>
+              <li class="mb-3 d-flex">
+                <img class="icon" src="assets/img/icons/theme/communication/call-1.svg" alt="call-1 icon" data-inject-svg />
+                <div class="ml-3">
+                  <span>+61 3928 3324</span>
+                  <span class="d-block text-muted text-small">Mon - Fri 9am - 5pm</span>
+                </div>
+              </li>
+              <li class="mb-3 d-flex">
+                <img class="icon" src="assets/img/icons/theme/communication/mail.svg" alt="mail icon" data-inject-svg />
+                <div class="ml-3">
+                  <a href="#">hello@company.io</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5 col-xl-4 mt-3 mt-lg-0">
+            <h5>Subscribe</h5>
+            <p>The latest Leap news, articles, and resources, sent straight to your inbox every month.</p>
+            <form action="/forms/mailchimp.php" data-form-email novalidate>
+              <div class="form-row">
+                <div class="col-12">
+                  <input type="email" class="form-control mb-2" placeholder="Email Address" name="email" required>
+                </div>
+                <div class="col-12">
+                  <div class="d-none alert alert-success" role="alert" data-success-message>
+                    Thanks, a member of our team will be in touch shortly.
+                  </div>
+                  <div class="d-none alert alert-danger" role="alert" data-error-message>
+                    Please fill all fields correctly.
+                  </div>
+                  <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE" data-size="invisible" data-badge="bottomleft">
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-loading btn-block" data-loading-text="Sending">
+                    <img class="icon" src="assets/img/icons/theme/code/loading.svg" alt="loading icon" data-inject-svg />
+                    <span>Subscribe</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <small class="text-muted form-text">We’ll never share your details. See our <a href="#">Privacy Policy</a>
+            </small>
+
+          </div>
+        </div>
+        <div class="row justify-content-center mb-2">
+          <div class="col-auto">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/instagram.svg" alt="instagram social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/youtube.svg" alt="youtube social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/medium.svg" alt="medium social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-md-auto text-center">
+            <small class="text-muted">&copy;2019 This page is protected by reCAPTCHA and is subject to the Google <a href="https://www.google.com/policies/privacy/">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service.</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+    <footer class="pb-4 bg-primary-3 text-light" id="footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col">
+            <div class="card card-body border-0 o-hidden mb-0 bg-primary text-light">
+              <div class="position-relative d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="h3 text-center mb-md-0">Start building & get rewarded</div>
+                <a href="ncfp.html" class="btn btn-lg btn-white">
+      Discover NCFP's
+    </a>
+              </div>
+             
+            </div>
+
+          </div>
+        </div>
+       
+        <div class="row justify-content-center mb-2">
+          <div class="col-auto">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="https://www.instagram.com/nyzo_currency" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/instagram.svg" alt="instagram social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://twitter.com/nyzo_currency" target='_blank' class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/youtube.svg" alt="youtube social icon" data-inject-svg />
+                </a>
+              </li> -->
+              <li class="nav-item">
+                <a href="https://medium.co/@nyzoco" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/medium.svg" alt="medium social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.facebook.com/nyzoblockchain/" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="github.html" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/theme/social/github.svg" alt="github social icon" data-inject-svg />
+                </a>
+              </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-md-auto text-center">
+            <small class="text-muted">&copy;2020 This page is protected by reCAPTCHA and is subject to the Google <a href="https://www.google.com/policies/privacy/">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service.</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+      <img class="icon" src="assets/img/icons/theme/navigation/arrow-up.svg" alt="arrow-up icon" data-inject-svg />
+    </a>
+
+    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <!-- Clipboard (copies content from browser into OS clipboard) -->
+    <script type="text/javascript" src="assets/js/clipboard.js"></script>
+    <!-- Fancybox (handles image and video lightbox and galleries) -->
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <!-- Flatpickr (calendar/date/time picker UI) -->
+    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+    <!-- Flickity (handles touch enabled carousels and sliders) -->
+    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+    <!-- Isotope (masonry layouts and filtering) -->
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- jarallax (parallax effect and video backgrounds) -->
+    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- jQuery smartWizard facilitates steppable wizard content -->
+    <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+    <!-- Prism (displays formatted code boxes) -->
+    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+    <!-- Smooth scroll (animation to links in-page)-->
+    <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+    <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
+    <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+    <!-- Typed text (animated typing effect)-->
+    <script type="text/javascript" src="assets/js/typed.min.js"></script>
+    <!-- Required theme scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/theme.js"></script>
+    <!-- Removes page load animation when window is finished loading -->
+    <script type="text/javascript">
+      window.addEventListener("load", function () {    
+        document.querySelector('body').classList.add('loaded');  
+
+    //     $.get("navbar_white.html", function( my_var ) {
+    // document.getElementById('loadNavbar').innerHTML=my_var;
+    //   });
+      });
+    </script>
+
+  </body>
+
+</html>

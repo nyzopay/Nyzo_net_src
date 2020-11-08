@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Nyzo.net - Knowledgebase - Getting started - Nyzo commands</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Commands for managing your Nyzo Verifier, Sentinel, Micropay server, Documentation server, Client & API.">
+    <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="icon" href="amp/favicon.ico">
+        <!-- Required vendor scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171082179-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171082179-1');
+</script>
+
+  </head>
+
+  <body>
+    <div class="loader">
+      <div class="loading-animation"></div>
+    </div>
+
+    <div class="navbar-container ">
+      <nav class="navbar navbar-expand-lg navbar-dark" data-overlay data-sticky="top">
+        <div class="container">
+          <a class="navbar-brand fade-page" href="knowledgebase.html">
+            <img src="assets/img/nyzlogo.png" alt="Nyzo" style='max-height:4.5rem;'>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg" alt="menu interface icon" data-inject-svg />
+            <img class="icon navbar-toggler-close" src="assets/img/icons/interface/cross.svg" alt="cross interface icon" data-inject-svg />
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <div class="py-2 py-lg-0">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a href="ncfp.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">NCFP</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="github.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">Github</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="mobile.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">Mobile</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Explorer</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu"><a target='_blank' href="https://nyzo.co" class="dropdown-item fade-page">Official explorer</a><a target='_blank' href="https://explorer.nyzo.net" class="dropdown-item fade-page">Web explorer<span class="badge badge-primary ml-2">New</span></a><a target='_blank' href="https://explorer.nyzo.net/client/richlist.html"
+                        class="dropdown-item fade-page">Richlist<span class="badge badge-primary ml-2">New</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Community</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu"><a href="https://forum.nyzo.community" class="dropdown-item fade-page">Forum<span class="badge badge-primary ml-2">New</span></a><a href="https://nyzo.ondiscord.net" class="dropdown-item fade-page">Discord</a><a href="https://t.me/NyzoCo"
+                        class="dropdown-item fade-page">Telegram</a><a href="https://twitter.com/nyzo_currency" class="dropdown-item fade-page">Twitter</a><a href="https://www.facebook.com/nyzoblockchain/" class="dropdown-item fade-page">Facebook</a><a href="https://weibo.com/nyzoco"
+                        class="dropdown-item fade-page">Weibo</a><br><a href="https://nyzo.io"
+                        class="dropdown-item fade-page">Nyzo.io</a><a href="https://nyzo.xyz"
+                        class="dropdown-item fade-page">Nyzo.xyz</a><a href="https://nyzo.today"
+                        class="dropdown-item fade-page">Nyzo.today</a><a href="https://nyzo.me"
+                        class="dropdown-item fade-page">Nyzo.me (cn)</a><br><a href="https://weibo.com/nyzoco"
+                        class="dropdown-item fade-page">QQ: 1007477423</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="http://78.47.221.148" target="_blank" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">Docs</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Exchanges</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu"><a href="https://buy.nyzo.net" class="dropdown-item fade-page">Qtrade.io<span class="badge badge-primary ml-2">Hot</span></a><a href="https://bilaxy.com" class="dropdown-item fade-page">Bilaxy</a><a href="https://bihodl.com"
+                        class="dropdown-item fade-page">Bihodl</a><a href="https://hotbit.io"
+                        class="dropdown-item fade-page">Hotbit</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!--<li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">API</a>
+                  <div class="dropdown-menu row">
+                    <div class="col-auto px-0" data-dropdown-content>
+                      <div class="bg-white rounded border shadow-lg o-hidden">
+                        <div class="list-group list-group-flush">
+                          <a href="https://explorer.nyzo.net/client/json/balance_list.json" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-3">
+                            <img class="icon icon-md" src="assets/img/icons/theme/files/selected-file.svg" alt="selected-file icon" data-inject-svg />
+                            <div class="text-body ml-3">
+                              <span>Balance list</span>
+                              <div class="text-small text-muted">Sorted numerically</div>
+                            </div>
+                          </a>
+                          <a href="https://explorer.nyzo.net/client/json/supply.json" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-3">
+                            <img class="icon icon-md" src="assets/img/icons/theme/files/selected-file.svg" alt="selected-file icon" data-inject-svg />
+                            <div class="text-body ml-3">
+                              <span>Network metrics</span>
+                              <div class="text-small text-muted">Circulating supply & more</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li> -->
+              </ul>
+            </div><a href="knowledgebase-wallets.html" class="btn btn-primary ml-lg-3">Download wallet</a>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    
+    <section class="bg-primary-3 text-light has-divider" data-overlay>
+      <img src="https://w.wallhaven.cc/full/4l/wallhaven-4l63wl.png" alt="Image" class="bg-image opacity-50">
+      <div class="container mt-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <h1 class="h2 mb-3">Nyzo commands</h1>
+            <!-- <form>
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon-1">
+                    <img class="icon" src="assets/img/icons/theme/general/search.svg" alt="search icon" data-inject-svg />
+                  </span>
+                </div>
+                <input type="search" class="form-control" placeholder="Search the Nyzo knowledgebase" aria-label="Search" aria-describedby="basic-addon-1">
+              </div>
+            </form> -->
+            <div class="d-flex text-small">
+              <span class="text-muted">Important commands for managing everything Nyzo.</span>
+              <!-- <ul class="list-unstyled d-flex ml-2 flex-wrap">
+                <li class="mx-1"><a href="#">Verifier installation,</a>
+                </li>
+                <li class="mx-1"><a href="#">Nyzo wallets,</a>
+                </li>
+                <li class="mx-1"><a href="#">How to join the network</a>
+                </li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider">
+        <img src="assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
+      </div>
+    </section>
+
+    <section class="pb-0 pb-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="knowledgebase.html">Knowledgebase</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="knowledgebase-getting-started.html">Getting started</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="#">Nyzo commands</a>
+                  </li>
+                </ol>
+              </nav>
+
+            </div>
+            <h1>Nyzo commands</h1>
+            <div class="d-flex align-items-center">
+              <a href="#">
+                <img src="https://forum.nyzo.community/user_avatar/forum.nyzo.community/snipe/120/307_2.png" alt="Avatar" class="avatar mr-2">
+              </a>
+              <div>
+                <div>by <a href="https://forum.nyzo.community/u/Snipe/">0xSnipe</a>
+                </div>
+                <div class="text-small text-muted">10/02/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-0" data-reading-position>
+      <div class="container">
+        <div class="row justify-content-center position-relative">
+          <div class="col-lg-10 col-xl-8">
+            <img src="https://media.discordapp.net/attachments/624369209173999617/672804931685580800/My_Post61.png?width=1242&height=699" alt="Image" class="rounded">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <article class="article">
+              <p class="lead">
+                Commands
+              </p>
+              <p>
+                From monitoring to maintaining your Nyzo nodes, this page will provide you with a large list of commands and resources to use.<br><br>
+                Looking for ways to deploy a Nyzo verifier or sentinel?<br><a href='knowledgebase-getting-started.html' target='_blank'>Read the relevant tutorials</a> in the Getting started section of the knowledge base.
+              </p>
+              <p>
+                
+              </p>
+              <h4>Verifier commands</h4>
+              <p>
+                After installing the verifier it may be necessary to update your instance, to check the output from the Nyzo process, to change settings in the configuration files, to change your nickname, or to migrate your verifier.
+                <br><br>
+                <b>Reloading your nyzoVerifier</b><br>
+                It may be necessary to reload your verifier if it is indicated on the <a href='https://nyzo.co' target='_blank'>nyzo.co website</a> as either yellow or red.<br><br>
+                <pre class='language-bash'>sudo supervisorctl reload</pre><br>
+                <b>Updating your nyzoVerifier</b><br>
+
+                
+                <pre class='language-bash'>cd /home/ubuntu/nyzoVerifier
+sudo git reset --hard
+sudo git pull origin master
+sudo ./gradlew build</pre>
+Before executing the fourth command, which restarts your verifier, you may wish to consult the mesh page to see where your verifier is in the cycle. <br><br><a href='https://nyzo.co' target='_blank'>At the top of this page</a>, the current cycle is displayed by descending age of last block verified. The verifiers at the top of the list have had the greatest time elapse since verifying a block, and the verifiers at the bottom of the list have had the least time elapse. The verifier in bold at the bottom of the list is the verifier of the current frozen edge.<br><br><img src='https://i.imgur.com/fvkz53u.png'><br><br>If you watch this page for a short time, you'll quickly see how the verification cycle works. The page automatically refreshes every 5 seconds, which is slightly shorter than the block time of 7 seconds, so you should see all blocks as they are produced.
+<br><br>
+To ensure that your verifier is processing blocks when its next turn in the cycle arrives, you should restart it when it is near the bottom of the list. <br><br>In the image below, the verifiers in the green-highlighted area are in the ideal range for restarting, and the verifiers in the red-highlighted area should not be restarted right now.
+<br><br><img src='https://i.imgur.com/9yyEeHK.png'><br><br>If you have confirmed the update timing, you can go ahead and reload your Nyzo verifier.<br><pre class='language-bash'>sudo supervisorctl reload</pre><br>
+<b>Downgrading your verifier</b><br>Due to unforeseen circumstances it may be possible that you want to downgrade your Nyzo verifier instance to a lower version.<br><br><a href='https://github.com/n-y-z-o/nyzoVerifier/commits/master' target='_blank'>Navigate to the Github repository's commit page</a> and click on the copy button of the version you want to downgrade to.<br><br><img src='https://i.imgur.com/3wOWFE2.png'><br><br>Copy these commands into a notepad and paste the hash in from Github, overwriting the placeholder.<br>Copy them once more, into your SSH session.<br>The same timing procedure applies as with updating your verifier.<pre class='language-bash'>cd /home/ubuntu/nyzoVerifier
+sudo git reset --hard <span style='color:red;'>PASTE HASH HERE</span><hash>
+sudo ./gradlew build
+sudo supervisorctl reload</pre><br><b>Changing your verifier nickname</b><br>Open the text editor with the first command, change your nickname in the text editor and save and close the text editor with <b>CTRL+O</b> & <b>CTRL+X</b>.<br>
+<pre class='language-bash'>sudo nano /var/lib/nyzo/production/nickname</pre><br>Afterwards, reload your verifier in accordance with the timing procedure.<br><pre class='language-bash'>sudo supervisorctl reload</pre><br><b>Verifier migration</b><br>
+To transfer the verifier to a new VPS, leave your current verifier running and spin up a new Nyzo verifier instance on a new VPS, with a different private key.<br><br>
+Leave this verifier running for 30 minutes until it becomes white <a href='https://nyzo.co/queue/all' target='_blank'>on the Nyzo web page</a>. After this period, put the private key of the verifier you're looking to transfer in the file, deleting the old one. Save the file with <b>CTRL+O</b> & <b>CTRL+X</b><br><pre class='language-bash'>sudo nano /var/lib/nyzo/production/verifier_private_seed</pre><br>Afterwards, reload the verifier and watch the verifier on the website until two nodes appear on its status page. Power down the old node and migration is completed.<br><pre class='language-bash'>sudo supervisorctl reload</pre>
+              </p>
+              <h4>Sentinel commands</h4>
+              <p>
+                <b>How to update</b><br>
+                This one is straightforward, run this at any time.
+                <pre class='language-bash'>cd /home/ubuntu/nyzoVerifier
+sudo git reset --hard
+sudo git pull origin master
+sudo ./gradlew build
+sudo supervisorctl reload</pre><br><br><b>Signing cycle transactions</b><br>
+                Signing cycle transactions is easily executed through the sentinel, you do not have to execute a command from every single verifier anymore. One execution on your sentinel is sufficient.<br><br><a href='http://tech.nyzo.co/releaseNotes/v552' target='_blank'>Version 552</a> or higher is required for this to work.<br><br>Start by switching over to your sentinel working directory:<pre class='language-bash'>cd /home/ubuntu/nyzoVerifier</pre><br>Next, go to <a href='https://nyzo.co/cycleTransactions' target='_blank'>the cycle transactions page</a> and copy the initiator signature of the <a href='https://forum.nyzo.community/c/ncfp/5' target='_blank'>NCFP</a> you want to approve.<br>Finally, run the following command and replace <b>SIGNATURE_HERE</b> with the initiator signature you copied.<br><pre class='language-bash'> sudo java -jar build/libs/nyzoVerifier-1.0.jar co.nyzo.verifier.scripts.CycleTransactionSignScript <b>SIGNATURE_HERE</b></pre><br><b>Adding verifiers to the sentinel</b><br>Just as mentioned in the <a href='getting-started-02.html' target='_blank'>sentinel installation tutorial</a>, open the <b>managed_verifiers</b> file and add new verifiers according to the following line construct:<br><br>
+                <ul>
+                  <li>IP address or host name</li>
+                  <li>port</li>
+                  <li>verifier private seed</li>
+                  <li>sentinel transaction flag (optional)</li>
+                </ul>
+
+                <pre class='language-bash'>nano /var/lib/nyzo/production/managed_verifiers</pre>
+
+                <img src='https://i.imgur.com/ZhOcxmn.png'>
+                <br><br>Save the file with <b>CTRL+O</b> & <b>CTRL+X</b> and reload your sentinel again:<br>
+                <pre class='language-bash'>sudo supervisorctl reload</pre>
+              </p>
+              <h4>Micropay commands</h4>
+              <p>
+                <div class="alert alert-warning" style='color:grey;' role="alert">
+                  The Micropay client is still under development. For now, it is only available through the nyzoVerifier codebase. A mobile client and browser extension for Micropay are under consideration.
+                </div>
+                To install the Micropay server, create a new VPS with at least 1 core and 2GB of RAM.
+
+               <pre class='language-bash'>wget https://explorer.nyzo.net/client/setup/micropay-setup.sh
+chmod +x micropay-setup.sh
+./micropay-setup.sh</pre>
+
+               This will install an instance of <a href='https://github.com/n-y-z-o/micropayExample.git' target='_blank'>micropayExample</a> on your VPS and host it on port 80.<br>
+               It contains multiple example pages for utilizing the micropay system.
+              </p>
+              <h4>Client commands</h4>
+              <p>
+                <b>Using the client</b>
+                <br>Easily open the client by using the following commands:<br>
+                <pre class='language-bash'>cd /home/ubuntu/nyzoVerifier
+sudo java -jar build/libs/nyzoVerifier-1.0.jar co.nyzo.verifier.client.Client</pre>
+                 This will present you with a list of commands you are able to execute within the application, from there on the on-screen instructions will guide you through each of the processes.<br><br>An in-depth overview of the client can be found on the<br><a href="wallets-03.html" target="_blank">Client wallet page of the Knowledgebase.</a><br><br>               
+                <img src='https://i.imgur.com/iTLpGzg.png'>
+              </p>
+              <h4>API commands</h4>
+              <p>
+                <b>Enabling the web API</b><br>
+                To enable the <a href='http://client.nyzo.co' target='_blank'>client web API</a> open the preference configuration file:<pre class='language-bash'>nano /var/lib/nyzo/production/preferences</pre>At the end of the file, add the following:<pre class='language-bash'>start_web_listener=1
+add_web_endpoints=1
+add_api_endpoints=1</pre>Proceed to save the file with <b>CTRL+O</b> & <b>CTRL+X</b>.<br>Next is for you to ensure that port 80 is open, you can access the client UI by visiting your verifier IP address in your browser.<br><br>
+                <img src='https://i.imgur.com/1zE56wx.png'>
+              </p>
+              <h4>Documentation Server</h4>
+              <p>
+                To run a <a href='http://tech.nyzo.co' target='_blank'>Nyzo documentation server</a>, go ahead and create a new VPS with at least 1 core and 2GB of RAM. Once deployed, install the documentation server on the VPS:
+                <pre class='language-bash'>wget https://explorer.nyzo.net/client/setup/documentation-setup.sh
+chmod +x documentation-setup.sh
+./documentation-setup.sh</pre>
+                You should now be able to view your documentation server in a web browser. If you cannot load pages, check the firewall to ensure port 80 is open.<br><br>For monitoring the documentation server, use the following command:<br>
+                <pre class='language-bash'>sudo supervisorctl tail -f nyzo_documentation_server</pre><br>
+
+You can direct your server to a different documentation repository to offer alternative documentation, and you can use a different source repository to modify the behavior of the server.<br><br>
+                
+                <img src='https://i.imgur.com/vMy3DH5.png'>
+              </p>
+              <h4>Learn more</h4>
+              <p>The knowledge base contains a seperate category for Proof of Diversity, where the role of the sentinel is explained, a typical verifier lifecycle timeline is visualized, the network's attack resilience is documented and the electrical consumption is compared to other projects in the cryptocurrency space.</p>
+              <div class="col text-center"> 
+                <a href="knowledgebase-proof-of-diversity.html" class="btn btn-lg btn-primary">
+                  Discover Proof of Diversity
+                </a>
+                
+              </div><br>Alternatively, learn how it all ties together with an entry-level overview of all the major components of the network.<br><br>
+              <div class="col text-center"> 
+                <a href="getting-started-04.html" class="btn btn-lg btn-primary">
+                  How the network works
+                </a>
+                
+              </div>
+              
+        
+        
+
+            <!-- <div class="row justify-content-center position-relative">
+              <div class="col-lg-10 col-xl-8">
+                <img src="https://i.imgur.com/y78SML3.png" alt="Image" class="rounded">
+              </div>
+            </div> -->
+              
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="has-divider">
+      <div class="container pt-3">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <hr> <!-- write js script to auto populate this with the current url TODO -->
+            <div class="d-flex align-items-center">
+              <span class="text-small mr-1">Share this article:</span>
+              <div class="d-flex mx-2">
+                <a id='shareTwitterToPopulate' href="#" class="btn btn-round btn-primary mx-1">
+                  <img class="icon icon-sm" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+                </a>
+                <a id='shareFacebookToPopulate' href="#" class="btn btn-round btn-primary mx-1">
+                  <img class="icon icon-sm" src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
+                </a>
+                
+              </div>
+            </div>
+            <hr>
+            
+          </div>
+        </div>
+      </div>
+      <div class="divider">
+        <img class="bg-primary-3" src="assets/img/dividers/divider-3.svg" alt="divider graphic" data-inject-svg />
+      </div>
+    </section>
+
+    <footer class="pb-4 bg-primary-3 text-light" id="footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col">
+            <div class="card card-body border-0 o-hidden mb-0 bg-primary text-light">
+              <div class="position-relative d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="h3 text-center mb-md-0">Start building & get rewarded</div>
+                <a href="ncfp.html" class="btn btn-lg btn-white">
+      Discover NCFP's
+    </a>
+              </div>
+             
+            </div>
+
+          </div>
+        </div>
+       
+        <div class="row justify-content-center mb-2">
+          <div class="col-auto">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="https://www.instagram.com/nyzo_currency" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/instagram.svg" alt="instagram social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://twitter.com/nyzo_currency" target='_blank' class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/youtube.svg" alt="youtube social icon" data-inject-svg />
+                </a>
+              </li> -->
+              <li class="nav-item">
+                <a href="https://medium.co/@nyzoco" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/medium.svg" alt="medium social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.facebook.com/nyzoblockchain/" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="github.html" class="nav-link">
+                  <img class="icon undefined" src="assets/img/icons/theme/social/github.svg" alt="github social icon" data-inject-svg />
+                </a>
+              </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-md-auto text-center">
+            <small class="text-muted">&copy;2020 This page is protected by reCAPTCHA and is subject to the Google <a href="https://www.google.com/policies/privacy/">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service.</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+      <img class="icon" src="assets/img/icons/theme/navigation/arrow-up.svg" alt="arrow-up icon" data-inject-svg />
+    </a>
+
+    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <!-- Clipboard (copies content from browser into OS clipboard) -->
+    <script type="text/javascript" src="assets/js/clipboard.js"></script>
+    <!-- Fancybox (handles image and video lightbox and galleries) -->
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <!-- Flatpickr (calendar/date/time picker UI) -->
+    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+    <!-- Flickity (handles touch enabled carousels and sliders) -->
+    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+    <!-- Isotope (masonry layouts and filtering) -->
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- jarallax (parallax effect and video backgrounds) -->
+    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- jQuery smartWizard facilitates steppable wizard content -->
+    <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+    <!-- Prism (displays formatted code boxes) -->
+    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+    <!-- Smooth scroll (animation to links in-page)-->
+    <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+    <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
+    <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+    <!-- Typed text (animated typing effect)-->
+    <script type="text/javascript" src="assets/js/typed.min.js"></script>
+    <!-- Required theme scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/theme.js"></script>
+    <!-- Removes page load animation when window is finished loading -->
+    <script type="text/javascript">
+      window.addEventListener("load", function () {    document.querySelector('body').classList.add('loaded');  });
+    </script>
+
+    <script type="text/javascript">
+      function initShareLinks(){
+        curr_pos = window.location.href;
+        document.getElementById('shareTwitterToPopulate').href= 'https://twitter.com/share?url=' + encodeURI(curr_pos);
+        document.getElementById('shareFacebookToPopulate').href= 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURI(curr_pos);
+      }
+      initShareLinks();
+    </script>
+  </body>
+
+</html>
